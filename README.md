@@ -1,4 +1,4 @@
-# Lab 1
+# Lab 1 - Marcos Ziadi
 
 ![Diagrama Entidad Relación](./DER.jpeg)
 
