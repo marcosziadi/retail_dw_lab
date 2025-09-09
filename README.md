@@ -1,8 +1,8 @@
 # Lab 1
 
-## Historia (contexto del negocio)
-
 ![Diagrama Entidad Relación](./DER.jpeg)
+
+## Historia (contexto del negocio)
 
 Andina Outdoor es un ecommerce argentino que vende indumentaria y accesorios. Vende por Web, App, Marketplace e Instagram Shop. Opera 2 depósitos (CABA y Córdoba). Corre campañas de performance, retargeting y lanzamientos, con UTM y presupuestos por campaña. El objetivo del lab es tomar estas fuentes normalizadas (raw), construir dimensiones desnormalizadas y hechos para analítica comercial/marketing.
 
