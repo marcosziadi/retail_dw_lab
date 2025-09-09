@@ -143,7 +143,7 @@ Andina Outdoor es un ecommerce argentino que vende indumentaria y accesorios. Ve
 * campaign_id FK (vacío si orgánico/directo)
 * utm_source, utm_medium, utm_campaign, utm_content, utm_term
 
-## Relaciones (mapeo breve PK → FK)
+## Relaciones
 
 * categories.category_id → products.category_id
 * products.product_id → order_items.product_id, inventory.product_id
