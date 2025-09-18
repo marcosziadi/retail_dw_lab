@@ -1,4 +1,18 @@
 paths:
-  raw: "../raw"
-  staging: "../staging"
-  warehouse: "../warehouse"
+  raw: "raw"
+  staging: "staging"
+  warehouse: "warehouse"
+
+dimensions:
+  dim_product:
+    source_tables: ["products", "categories"]
+    join_key: "category_id"
+    output_columns:
+      - product_key
+      - product_id
+      - product_name
+      - category_id
+      - category_name
+      - category_description
+      - unit_price
+      - units_in_stock
