@@ -1,6 +1,6 @@
 # Lab 1 - Marcos Ziadi
 
-![Diagrama Entidad Relación](./DER.jpeg)
+![Diagrama Entidad Relación](./models/er_oltp.jpeg)
 
 ## Historia (contexto del negocio)
 
