@@ -2,7 +2,6 @@ paths:
   raw: "raw"
   staging: "staging"
   warehouse: "warehouse"
-
 dimensions:
   dim_product:
     source_tables: ["products", "categories"]
@@ -10,9 +9,79 @@ dimensions:
     output_columns:
       - product_key
       - product_id
+      - sku
       - product_name
-      - category_id
-      - category_name
-      - category_description
+      - brand
       - unit_price
-      - units_in_stock
+      - unit_cost
+      - active_from
+      - active_to
+      - created_at
+      - category_name
+      - parent_category_name
+  dim_campaign:
+    source_tables: "campaigns"
+    join_key: "channel_id"
+    output_columns:
+      - campaign_key
+      - campaign_name
+      - utm_source
+      - utm_medium
+      - utm_campaign
+      - start_date
+      - end_date
+      - budget_ars
+      - channel_name
+      - description
+  dim_location:
+    source_tables: ["customer_addresses"]
+    output_columns:
+      - location_key
+      - city
+      - province
+      - country_code
+  dim_customer:
+    source_tables: ["customers"]
+    output_columns:
+      - customer_key
+      - first_name
+      - last_name
+      - email
+      - phone
+      - gender
+      - birth_date
+      - age
+      - created_at
+  dim_date:
+    source_tables: ["orders"]
+    output_columns:
+      - date_key
+      - full_date
+      - year
+      - quarter
+      - month
+      - month_name
+      - week_of_year
+      - day_of_month
+      - day_of_week
+      - day_name
+      - is_weekend
+      - is_holiday
+  dim_time:
+    output_columns:
+    - time_key
+    - full_time
+    - hour
+    - minute
+    - second
+    - am_pm
+    - hour_24
+    - time_slot
+facts:
+  fact_sales:
+    source_tables: ["orders", "order_items"]
+    output_columns:
+     
+  
+
+

@@ -1,0 +1,6 @@
+MARKETING Y CAMPAÑAS
+Tablas relacionadas: campaigns, channels, order_marketing, orders
+
+Métricas: ROI de campañas, conversión por canal, costo por adquisición
+
+Grano: por pedido o por interacción de campaña

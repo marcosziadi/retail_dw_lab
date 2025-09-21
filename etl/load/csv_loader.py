@@ -15,7 +15,7 @@ class CSVLoader:
 
         try:
             df.to_csv(file_path, index = False)
-            print(f"{filename} was saves in {self.output_path}")
+            print(f"{filename} was saved in {self.output_path}")
             return True
         except Exception as e:
             print(f"Error saving {filename}: {str(e)}")

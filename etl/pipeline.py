@@ -36,24 +36,38 @@ def run_etl_pipeline():
         # TRANSFORM
         print("\nTRANSFORMATION: Creating product dimension...")
         dim_builder = DimBuilder(config)
+        dim_dfs = {}
+
         dim_product_df = dim_builder.build_dim_product(
             raw_data["products"],
             raw_data["categories"]
         )
+        dim_dfs["dim_product"] = dim_product_df
 
-        # Show data preview
-        print("\n dim_product preview:")
-        print(dim_product_df.head(5))
+        dim_campaign_df = dim_builder.build_dim_campaign(
+            raw_data["campaigns"],
+            raw_data["channels"]
+        )
+        dim_dfs["dim_campaign"] = dim_campaign_df
+
+        dim_customer_df = dim_builder.build_dim_customer(
+            raw_data["customers"]
+        )
+        dim_dfs["dim_customer"] = dim_customer_df
 
         # LOAD
-        print("\nLOAD: Saving product dimension...")
+        print("\nLOAD: Saving dimensions...")
         loader = CSVLoader(config["paths"]["warehouse"])
-        success = loader.save_dataframe(dim_product_df, "dim_product.csv")
+        dims_ready = []
+        for dim in dim_dfs:
+            success = loader.save_dataframe(dim_dfs[dim], f"{dim}.csv")
+            dims_ready.append(success)
 
-        if success:
+        if all(dims_ready):
             print("\n" + "=" * 50)
             print("ETL Pipeline successfully completed!")
-            print(f"Product Dimension created with {len(dim_product_df)} rows")
+            for dim in dim_dfs:
+                print(f"{dim} created with {len(dim_dfs[dim])} rows")
             print("=" * 50)
             return True
         else:

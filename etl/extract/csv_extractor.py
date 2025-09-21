@@ -20,7 +20,7 @@ class CSVExtractor:
                 try:
                     df = pd.read_csv(file_path)
                     dataframes[table_name] = df
-                    print(f"{file} was successfully read.\tRows: {len(df)}")
+                    print(f"{file} was successfully read. Rows: {len(df)}")
                 except Exception as e:
                     print(f"Error: {file} | {str(e)}")
                     raise
