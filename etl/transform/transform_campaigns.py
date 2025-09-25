@@ -4,18 +4,10 @@ from pathlib import Path
 from etl.extract import CSVExtractor
 
 
-RAW_PATH = Path("raw")
-STAGING_PATH = Path("staging")
-
-
-def clean_campaigns() -> pd.DataFrame:
+def clean_campaigns(campaigns: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor(RAW_PATH, STAGING_PATH)
-
-    campaigns = extractor.load_csv(RAW_PATH, "campaigns")
 
     campaigns_clean = campaigns.drop(columns = ["channel_id"])
 

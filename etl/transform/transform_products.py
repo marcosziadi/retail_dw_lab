@@ -4,19 +4,10 @@ from pathlib import Path
 from etl.extract import CSVExtractor
 
 
-RAW_PATH = Path("raw")
-STAGING_PATH = Path("staging")
-
-
-def clean_products() -> pd.DataFrame:
+def clean_products(products: pd.DataFrame, categories: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor(RAW_PATH, STAGING_PATH)
-
-    products = extractor.load_csv(RAW_PATH, "products")
-    categories = extractor.load_csv(RAW_PATH, "categories")
 
     categories_with_parents_name = pd.merge(
         categories,

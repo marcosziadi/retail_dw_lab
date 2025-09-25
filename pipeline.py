@@ -12,7 +12,6 @@ from etl.transform import clean_locations
 from etl.load import CSVLoader
 from utils.config_loader import load_config # SE PODRIA ELIMINAR
 
-import pandas as pd # TEMPORAL SACAR CUANDO SE SAQUEN LOS README
 RAW_PATH = Path("raw")
 WAREHOUSE_PATH = Path("warehouse")
 STAGING_PATH = Path("staging")
@@ -28,18 +27,22 @@ def run_etl_pipeline():
     print("="*50)
 
     try:
-        # EXTRACT & TRANSFORM
+        # EXTRACT
         print("\nEXTRACTION: Reading csv files...")
-        print("\nSTAGING: Cleaning and preparing tables...")  
-        clean_products()
-        clean_channels()
-        clean_campaigns()
-        clean_customers()
-        clean_locations()
+        extractor = CSVExtractor()
+        raw_data = extractor.read_all_csv_files(RAW_PATH)
 
+        # STAGING
+        print("\nSTAGING: Cleaning and preparing tables...")  
+        clean_products(raw_data["products"], raw_data["categories"])
+        clean_channels(raw_data["channels"])
+        clean_campaigns(raw_data["campaigns"])
+        clean_customers(raw_data["customers"])
+        clean_locations(raw_data["customer_addresses"])
+
+        # TRANSFORM
         print("\nTRANSFORMATION: Creating dimensions...")
-        extractor = CSVExtractor(RAW_PATH, STAGING_PATH)
-        staging_data = extractor.read_all_staging_csv_files()
+        staging_data = extractor.read_all_csv_files(STAGING_PATH)
 
         dim_builder = DimBuilder()
         dim_dfs = {}

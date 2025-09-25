@@ -3,9 +3,8 @@ import os
 
 
 class CSVExtractor:
-    def __init__(self, raw_data_path, staging_data_path):
-        self.raw_data_path = raw_data_path
-        self.staging_data_path = staging_data_path
+    def __init__(self):
+        pass
 
     def load_csv(self, path: str ,file_name: str) -> pd.DataFrame:
         """
@@ -24,17 +23,17 @@ class CSVExtractor:
         
         return df
 
-    def read_all_staging_csv_files(self):
+    def read_all_csv_files(self, path):
         """
-        Lee todos los archivos CSV del directorio raw.
+        DESCRIPTION
         """
         
         dataframes = {}
 
-        for file in os.listdir(self.staging_data_path):
+        for file in os.listdir(path):
             if file.endswith(".csv"):
                 table_name = file.replace(".csv", "")
-                df = self.load_csv(self.staging_data_path, table_name)
+                df = self.load_csv(path, table_name)
                 dataframes[table_name] = df
                 
         return dataframes
