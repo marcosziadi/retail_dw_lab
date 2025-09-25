@@ -1,0 +1,395 @@
+location_id,address_id,city,province,country_code
+1,1,Mendoza,Santa Fe,AR
+2,2,Neuquén,CABA,AR
+3,3,Salta,Neuquén,AR
+4,4,Comodoro Rivadavia,Mendoza,AR
+3,5,Salta,Neuquén,AR
+5,6,Comodoro Rivadavia,Tucumán,AR
+6,7,Neuquén,Neuquén,AR
+7,8,San Miguel de Tucumán,Mendoza,AR
+8,9,Mar del Plata,Entre Ríos,AR
+9,10,La Plata,Chubut,AR
+10,11,Rosario,Tucumán,AR
+11,12,Buenos Aires,Chubut,AR
+12,13,Mar del Plata,Córdoba,AR
+13,14,Neuquén,Santa Fe,AR
+14,15,Comodoro Rivadavia,Santa Fe,AR
+15,16,Mar del Plata,Chubut,AR
+16,17,La Plata,Tucumán,AR
+17,18,Salta,Mendoza,AR
+18,19,Rosario,CABA,AR
+19,20,Paraná,Salta,AR
+20,21,Córdoba,Tucumán,AR
+21,22,Mendoza,Salta,AR
+22,23,Paraná,Córdoba,AR
+23,24,Salta,Chubut,AR
+24,25,Paraná,Buenos Aires,AR
+25,26,Rosario,Chubut,AR
+8,27,Mar del Plata,Entre Ríos,AR
+26,28,Buenos Aires,Neuquén,AR
+27,29,La Plata,Buenos Aires,AR
+28,30,Mendoza,Tucumán,AR
+29,31,Córdoba,Mendoza,AR
+30,32,Neuquén,Salta,AR
+31,33,La Plata,Neuquén,AR
+32,34,Mar del Plata,Santa Fe,AR
+33,35,Mendoza,Entre Ríos,AR
+34,36,Mar del Plata,CABA,AR
+35,37,Mendoza,Chubut,AR
+1,38,Mendoza,Santa Fe,AR
+25,39,Rosario,Chubut,AR
+27,40,La Plata,Buenos Aires,AR
+36,41,Rosario,Salta,AR
+37,42,Salta,Salta,AR
+38,43,Mendoza,CABA,AR
+32,44,Mar del Plata,Santa Fe,AR
+23,45,Salta,Chubut,AR
+30,46,Neuquén,Salta,AR
+39,47,San Miguel de Tucumán,CABA,AR
+25,48,Rosario,Chubut,AR
+40,49,Mar del Plata,Buenos Aires,AR
+41,50,Comodoro Rivadavia,Córdoba,AR
+42,51,Rosario,Entre Ríos,AR
+39,52,San Miguel de Tucumán,CABA,AR
+43,53,Neuquén,Córdoba,AR
+44,54,San Miguel de Tucumán,Santa Fe,AR
+45,55,Neuquén,Tucumán,AR
+46,56,Rosario,Santa Fe,AR
+47,57,Comodoro Rivadavia,CABA,AR
+48,58,Córdoba,Santa Fe,AR
+49,59,CABA,Entre Ríos,AR
+50,60,Buenos Aires,Córdoba,AR
+40,61,Mar del Plata,Buenos Aires,AR
+10,62,Rosario,Tucumán,AR
+43,63,Neuquén,Córdoba,AR
+4,64,Comodoro Rivadavia,Mendoza,AR
+51,65,Rosario,Buenos Aires,AR
+52,66,Mar del Plata,Mendoza,AR
+6,67,Neuquén,Neuquén,AR
+14,68,Comodoro Rivadavia,Santa Fe,AR
+23,69,Salta,Chubut,AR
+53,70,CABA,Mendoza,AR
+54,71,Mar del Plata,Salta,AR
+37,72,Salta,Salta,AR
+51,73,Rosario,Buenos Aires,AR
+48,74,Córdoba,Santa Fe,AR
+55,75,Buenos Aires,Entre Ríos,AR
+56,76,San Miguel de Tucumán,Buenos Aires,AR
+57,77,Córdoba,Chubut,AR
+49,78,CABA,Entre Ríos,AR
+23,79,Salta,Chubut,AR
+58,80,Paraná,Tucumán,AR
+59,81,Buenos Aires,Santa Fe,AR
+60,82,CABA,CABA,AR
+61,83,Mendoza,Mendoza,AR
+62,84,Mendoza,Neuquén,AR
+44,85,San Miguel de Tucumán,Santa Fe,AR
+10,86,Rosario,Tucumán,AR
+11,87,Buenos Aires,Chubut,AR
+63,88,La Plata,Santa Fe,AR
+64,89,Neuquén,Chubut,AR
+65,90,Neuquén,Mendoza,AR
+66,91,La Plata,Salta,AR
+46,92,Rosario,Santa Fe,AR
+19,93,Paraná,Salta,AR
+67,94,Paraná,Entre Ríos,AR
+14,95,Comodoro Rivadavia,Santa Fe,AR
+2,96,Neuquén,CABA,AR
+63,97,La Plata,Santa Fe,AR
+66,98,La Plata,Salta,AR
+51,99,Rosario,Buenos Aires,AR
+34,100,Mar del Plata,CABA,AR
+68,101,San Miguel de Tucumán,Salta,AR
+22,102,Paraná,Córdoba,AR
+38,103,Mendoza,CABA,AR
+69,104,Salta,Santa Fe,AR
+70,105,Rosario,Córdoba,AR
+71,106,San Miguel de Tucumán,Córdoba,AR
+15,107,Mar del Plata,Chubut,AR
+72,108,Paraná,Mendoza,AR
+73,109,Salta,Entre Ríos,AR
+74,110,Mar del Plata,Tucumán,AR
+69,111,Salta,Santa Fe,AR
+75,112,Mendoza,Córdoba,AR
+76,113,Buenos Aires,CABA,AR
+22,114,Paraná,Córdoba,AR
+77,115,Córdoba,Entre Ríos,AR
+20,116,Córdoba,Tucumán,AR
+8,117,Mar del Plata,Entre Ríos,AR
+41,118,Comodoro Rivadavia,Córdoba,AR
+78,119,CABA,Chubut,AR
+30,120,Neuquén,Salta,AR
+52,121,Mar del Plata,Mendoza,AR
+47,122,Comodoro Rivadavia,CABA,AR
+79,123,Buenos Aires,Mendoza,AR
+54,124,Mar del Plata,Salta,AR
+65,125,Neuquén,Mendoza,AR
+37,126,Salta,Salta,AR
+80,127,Salta,Tucumán,AR
+10,128,Rosario,Tucumán,AR
+62,129,Mendoza,Neuquén,AR
+22,130,Paraná,Córdoba,AR
+10,131,Rosario,Tucumán,AR
+31,132,La Plata,Neuquén,AR
+26,133,Buenos Aires,Neuquén,AR
+71,134,San Miguel de Tucumán,Córdoba,AR
+55,135,Buenos Aires,Entre Ríos,AR
+49,136,CABA,Entre Ríos,AR
+81,137,Córdoba,Córdoba,AR
+36,138,Rosario,Salta,AR
+82,139,Córdoba,CABA,AR
+31,140,La Plata,Neuquén,AR
+59,141,Buenos Aires,Santa Fe,AR
+18,142,Rosario,CABA,AR
+59,143,Buenos Aires,Santa Fe,AR
+83,144,Comodoro Rivadavia,Entre Ríos,AR
+74,145,Mar del Plata,Tucumán,AR
+84,146,Salta,Buenos Aires,AR
+47,147,Comodoro Rivadavia,CABA,AR
+85,148,Neuquén,Buenos Aires,AR
+86,149,CABA,Salta,AR
+87,150,Rosario,Neuquén,AR
+26,151,Buenos Aires,Neuquén,AR
+88,152,Buenos Aires,Salta,AR
+40,153,Mar del Plata,Buenos Aires,AR
+13,154,Neuquén,Santa Fe,AR
+46,155,Rosario,Santa Fe,AR
+62,156,Mendoza,Neuquén,AR
+69,157,Salta,Santa Fe,AR
+1,158,Mendoza,Santa Fe,AR
+89,159,La Plata,Córdoba,AR
+21,160,Mendoza,Salta,AR
+40,161,Mar del Plata,Buenos Aires,AR
+19,162,Paraná,Salta,AR
+23,163,Salta,Chubut,AR
+90,164,Córdoba,Salta,AR
+52,165,Mar del Plata,Mendoza,AR
+79,166,Buenos Aires,Mendoza,AR
+14,167,Comodoro Rivadavia,Santa Fe,AR
+83,168,Comodoro Rivadavia,Entre Ríos,AR
+26,169,Buenos Aires,Neuquén,AR
+75,170,Mendoza,Córdoba,AR
+74,171,Mar del Plata,Tucumán,AR
+91,172,CABA,Córdoba,AR
+82,173,Córdoba,CABA,AR
+92,174,Buenos Aires,Buenos Aires,AR
+51,175,Rosario,Buenos Aires,AR
+93,176,CABA,Neuquén,AR
+63,177,La Plata,Santa Fe,AR
+94,178,Buenos Aires,Tucumán,AR
+7,179,San Miguel de Tucumán,Mendoza,AR
+95,180,San Miguel de Tucumán,Chubut,AR
+91,181,CABA,Córdoba,AR
+69,182,Salta,Santa Fe,AR
+81,183,Córdoba,Córdoba,AR
+96,184,Paraná,CABA,AR
+23,185,Salta,Chubut,AR
+35,186,Mendoza,Chubut,AR
+97,187,CABA,Tucumán,AR
+62,188,Mendoza,Neuquén,AR
+44,189,San Miguel de Tucumán,Santa Fe,AR
+40,190,Mar del Plata,Buenos Aires,AR
+26,191,Buenos Aires,Neuquén,AR
+98,192,Comodoro Rivadavia,Neuquén,AR
+53,193,CABA,Mendoza,AR
+30,194,Neuquén,Salta,AR
+87,195,Rosario,Neuquén,AR
+38,196,Mendoza,CABA,AR
+29,197,Córdoba,Mendoza,AR
+7,198,San Miguel de Tucumán,Mendoza,AR
+77,199,Córdoba,Entre Ríos,AR
+53,200,CABA,Mendoza,AR
+31,201,La Plata,Neuquén,AR
+13,202,Neuquén,Santa Fe,AR
+89,203,La Plata,Córdoba,AR
+92,204,Buenos Aires,Buenos Aires,AR
+99,205,San Miguel de Tucumán,Neuquén,AR
+94,206,Buenos Aires,Tucumán,AR
+89,207,La Plata,Córdoba,AR
+100,208,Comodoro Rivadavia,Chubut,AR
+81,209,Córdoba,Córdoba,AR
+97,210,CABA,Tucumán,AR
+99,211,San Miguel de Tucumán,Neuquén,AR
+81,212,Córdoba,Córdoba,AR
+101,213,La Plata,Mendoza,AR
+46,214,Rosario,Santa Fe,AR
+102,215,La Plata,CABA,AR
+50,216,Buenos Aires,Córdoba,AR
+102,217,La Plata,CABA,AR
+68,218,San Miguel de Tucumán,Salta,AR
+67,219,Paraná,Entre Ríos,AR
+103,220,CABA,Buenos Aires,AR
+54,221,Mar del Plata,Salta,AR
+85,222,Neuquén,Buenos Aires,AR
+63,223,La Plata,Santa Fe,AR
+11,224,Buenos Aires,Chubut,AR
+73,225,Salta,Entre Ríos,AR
+59,226,Buenos Aires,Santa Fe,AR
+66,227,La Plata,Salta,AR
+90,228,Córdoba,Salta,AR
+15,229,Mar del Plata,Chubut,AR
+33,230,Mendoza,Entre Ríos,AR
+25,231,Rosario,Chubut,AR
+43,232,Neuquén,Córdoba,AR
+56,233,San Miguel de Tucumán,Buenos Aires,AR
+70,234,Rosario,Córdoba,AR
+13,235,Neuquén,Santa Fe,AR
+5,236,Comodoro Rivadavia,Tucumán,AR
+65,237,Neuquén,Mendoza,AR
+79,238,Buenos Aires,Mendoza,AR
+60,239,CABA,CABA,AR
+28,240,Mendoza,Tucumán,AR
+83,241,Comodoro Rivadavia,Entre Ríos,AR
+39,242,San Miguel de Tucumán,CABA,AR
+9,243,La Plata,Chubut,AR
+82,244,Córdoba,CABA,AR
+93,245,CABA,Neuquén,AR
+70,246,Rosario,Córdoba,AR
+24,247,Paraná,Buenos Aires,AR
+84,248,Salta,Buenos Aires,AR
+30,249,Neuquén,Salta,AR
+29,250,Córdoba,Mendoza,AR
+15,251,Mar del Plata,Chubut,AR
+72,252,Paraná,Mendoza,AR
+73,253,Salta,Entre Ríos,AR
+8,254,Mar del Plata,Entre Ríos,AR
+80,255,Salta,Tucumán,AR
+60,256,CABA,CABA,AR
+75,257,Mendoza,Córdoba,AR
+64,258,Neuquén,Chubut,AR
+67,259,Paraná,Entre Ríos,AR
+104,260,Córdoba,Neuquén,AR
+16,261,La Plata,Tucumán,AR
+2,262,Neuquén,CABA,AR
+28,263,Mendoza,Tucumán,AR
+5,264,Comodoro Rivadavia,Tucumán,AR
+97,265,CABA,Tucumán,AR
+22,266,Paraná,Córdoba,AR
+52,267,Mar del Plata,Mendoza,AR
+8,268,Mar del Plata,Entre Ríos,AR
+80,269,Salta,Tucumán,AR
+105,270,La Plata,Entre Ríos,AR
+30,271,Neuquén,Salta,AR
+63,272,La Plata,Santa Fe,AR
+59,273,Buenos Aires,Santa Fe,AR
+42,274,Rosario,Entre Ríos,AR
+42,275,Rosario,Entre Ríos,AR
+86,276,CABA,Salta,AR
+89,277,La Plata,Córdoba,AR
+18,278,Rosario,CABA,AR
+25,279,Rosario,Chubut,AR
+14,280,Comodoro Rivadavia,Santa Fe,AR
+103,281,CABA,Buenos Aires,AR
+100,282,Comodoro Rivadavia,Chubut,AR
+2,283,Neuquén,CABA,AR
+106,284,Paraná,Neuquén,AR
+101,285,La Plata,Mendoza,AR
+16,286,La Plata,Tucumán,AR
+14,287,Comodoro Rivadavia,Santa Fe,AR
+74,288,Mar del Plata,Tucumán,AR
+107,289,Mar del Plata,Neuquén,AR
+8,290,Mar del Plata,Entre Ríos,AR
+92,291,Buenos Aires,Buenos Aires,AR
+28,292,Mendoza,Tucumán,AR
+28,293,Mendoza,Tucumán,AR
+41,294,Comodoro Rivadavia,Córdoba,AR
+107,295,Mar del Plata,Neuquén,AR
+17,296,Salta,Mendoza,AR
+77,297,Córdoba,Entre Ríos,AR
+61,298,Mendoza,Mendoza,AR
+83,299,Comodoro Rivadavia,Entre Ríos,AR
+1,300,Mendoza,Santa Fe,AR
+40,301,Mar del Plata,Buenos Aires,AR
+9,302,La Plata,Chubut,AR
+36,303,Rosario,Salta,AR
+6,304,Neuquén,Neuquén,AR
+15,305,Mar del Plata,Chubut,AR
+87,306,Rosario,Neuquén,AR
+92,307,Buenos Aires,Buenos Aires,AR
+77,308,Córdoba,Entre Ríos,AR
+30,309,Neuquén,Salta,AR
+108,310,Rosario,Mendoza,AR
+34,311,Mar del Plata,CABA,AR
+11,312,Buenos Aires,Chubut,AR
+93,313,CABA,Neuquén,AR
+16,314,La Plata,Tucumán,AR
+66,315,La Plata,Salta,AR
+69,316,Salta,Santa Fe,AR
+17,317,Salta,Mendoza,AR
+24,318,Paraná,Buenos Aires,AR
+109,319,Comodoro Rivadavia,Buenos Aires,AR
+82,320,Córdoba,CABA,AR
+1,321,Mendoza,Santa Fe,AR
+104,322,Córdoba,Neuquén,AR
+87,323,Rosario,Neuquén,AR
+95,324,San Miguel de Tucumán,Chubut,AR
+15,325,Mar del Plata,Chubut,AR
+16,326,La Plata,Tucumán,AR
+19,327,Paraná,Salta,AR
+14,328,Comodoro Rivadavia,Santa Fe,AR
+109,329,Comodoro Rivadavia,Buenos Aires,AR
+14,330,Comodoro Rivadavia,Santa Fe,AR
+43,331,Neuquén,Córdoba,AR
+44,332,San Miguel de Tucumán,Santa Fe,AR
+3,333,Salta,Neuquén,AR
+65,334,Neuquén,Mendoza,AR
+62,335,Mendoza,Neuquén,AR
+80,336,Salta,Tucumán,AR
+79,337,Buenos Aires,Mendoza,AR
+24,338,Paraná,Buenos Aires,AR
+110,339,Mendoza,Buenos Aires,AR
+54,340,Mar del Plata,Salta,AR
+85,341,Neuquén,Buenos Aires,AR
+13,342,Neuquén,Santa Fe,AR
+7,343,San Miguel de Tucumán,Mendoza,AR
+5,344,Comodoro Rivadavia,Tucumán,AR
+48,345,Córdoba,Santa Fe,AR
+26,346,Buenos Aires,Neuquén,AR
+64,347,Neuquén,Chubut,AR
+29,348,Córdoba,Mendoza,AR
+27,349,La Plata,Buenos Aires,AR
+9,350,La Plata,Chubut,AR
+28,351,Mendoza,Tucumán,AR
+19,352,Paraná,Salta,AR
+67,353,Paraná,Entre Ríos,AR
+111,354,Neuquén,Entre Ríos,AR
+15,355,Mar del Plata,Chubut,AR
+68,356,San Miguel de Tucumán,Salta,AR
+63,357,La Plata,Santa Fe,AR
+60,358,CABA,CABA,AR
+73,359,Salta,Entre Ríos,AR
+90,360,Córdoba,Salta,AR
+98,361,Comodoro Rivadavia,Neuquén,AR
+83,362,Comodoro Rivadavia,Entre Ríos,AR
+3,363,Salta,Neuquén,AR
+108,364,Rosario,Mendoza,AR
+103,365,CABA,Buenos Aires,AR
+26,366,Buenos Aires,Neuquén,AR
+16,367,La Plata,Tucumán,AR
+56,368,San Miguel de Tucumán,Buenos Aires,AR
+89,369,La Plata,Córdoba,AR
+3,370,Salta,Neuquén,AR
+94,371,Buenos Aires,Tucumán,AR
+76,372,Buenos Aires,CABA,AR
+66,373,La Plata,Salta,AR
+89,374,La Plata,Córdoba,AR
+9,375,La Plata,Chubut,AR
+107,376,Mar del Plata,Neuquén,AR
+112,377,Paraná,Chubut,AR
+83,378,Comodoro Rivadavia,Entre Ríos,AR
+58,379,Paraná,Tucumán,AR
+4,380,Comodoro Rivadavia,Mendoza,AR
+67,381,Paraná,Entre Ríos,AR
+53,382,CABA,Mendoza,AR
+104,383,Córdoba,Neuquén,AR
+6,384,Neuquén,Neuquén,AR
+86,385,CABA,Salta,AR
+24,386,Paraná,Buenos Aires,AR
+46,387,Rosario,Santa Fe,AR
+35,388,Mendoza,Chubut,AR
+89,389,La Plata,Córdoba,AR
+91,390,CABA,Córdoba,AR
+31,391,La Plata,Neuquén,AR
+32,392,Mar del Plata,Santa Fe,AR
+70,393,Rosario,Córdoba,AR
+86,394,CABA,Salta,AR

@@ -4,68 +4,92 @@ import datetime as dt
 
 
 class DimBuilder:
-    def __init__(self, config):
-        self.config = config
+    def __init__(self):
+        pass
 
-    
-    def build_dim_product(self, products_df: pd.DataFrame, categories_df: pd.DataFrame) -> pd.DataFrame:
+    def _create_surrogate_key(self, dim_table: pd.DataFrame, key_name: str) -> pd.DataFrame:
         """
-        Creates product dimension by joining products and categories tables.
+        DESCRIPTION
+        """
+
+        dim_table[key_name] = range(1, len(dim_table) + 1)
+
+        return dim_table
+
+    def _add_parent_category(self, categories_df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Replaces the parent_category_id for its name in the categories table
         """
         
-        # Create categories with parent names
         categories_with_parents_df = pd.merge(
             categories_df,
             categories_df.add_prefix("parent_"),
-            on = "parent_category_id",
-            how = "left",
-        )[["category_id","category_name","parent_category_name"]]
+            on="parent_category_id",
+            how="left"
+        )[["category_id", "category_name", "parent_category_name"]]
 
-        # Create dimension_table
-        dim_product = pd.merge(
-            products_df,
-            categories_with_parents_df,
-            on = "category_id",
-            how = "left"
-        ).drop(columns=["category_id"])
+        return categories_with_parents_df 
 
-        # NEW SURROGATE KEY
-        # dim_product = dim_product.reset_index().rename(columns = {'index':'product_key'})
-        # dim_product['product_key'] = dim_product['product_key'] + 1
 
-        print(f"dim_product table was successfully created. Rows: {len(dim_product)}")
+    def build_dim_product(self, dim_product_raw: pd.DataFrame) -> pd.DataFrame:
+        """
+        DESCRIPTION
+        """
+
+        # New surrogate key
+        dim_product = self._create_surrogate_key(dim_product_raw, "product_key")
+
+        print(f"dim_product table was successfully created!")
+
         return dim_product
 
-
-    def build_dim_campaign(self, campaigns_df, channels_df):
+    def build_dim_campaign(self, dim_campaign_raw: pd.DataFrame) -> pd.DataFrame:
         """
-        Creates campaign dimension by joining campaigns and channels.
+        Creates campaign dimension.
         """
 
-        # JOIN CAMPAIGNS AND CHANNELS
-        dim_campaign = pd.merge(
-            campaigns_df,
-            channels_df,
-            on = "channel_id",
-            how = "left"
-        ).drop(columns=["channel_id"])
+        # New surrogate key
+        dim_campaign = self._create_surrogate_key(dim_campaign_raw, "campaign_key")
 
-        # NEW SURROGATE KEY
-        # dim_campaign['campaign_key'] = range(1, len(dim_campaign) + 1)
+        print(f"dim_campaign table was successfully created!")
 
-        print(f"dim_campaign table was successfully created. Rows: {len(dim_campaign)}")
         return dim_campaign
 
-    def build_dim_customer(self, customers_df):
+    def build_dim_customer(self, dim_customer_raw: pd.DataFrame) -> pd.DataFrame:
         """
         Creates customer dimension with customers dataframe.
         """
 
-        dim_customer = customers_df.rename(columns = {
-            "customer_id": "customer_key"
-            })
-        print(f"dim_customer table was successfully created. Rows: {len(dim_customer)}")
+        # New surrogate key
+        dim_customer = self._create_surrogate_key(dim_customer_raw, "customer_key")
+
+        print(f"dim_customer table was successfully created!")
+
         return dim_customer
+
+    def build_dim_channel(self, dim_channel_raw: pd.DataFrame) -> pd.DataFrame:
+        """
+        Creates channel dimension.
+        """
+
+        # New surrogate key
+        dim_channel = self._create_surrogate_key(dim_channel_raw, "channel_key")
+
+        print(f"dim_channel table was successfully created!")
+
+        return dim_channel
+
+    def build_dim_location(self, dim_location_raw: pd.DataFrame) -> pd.DataFrame:
+        """
+        DESCRIPTION
+        """
+        # ACA HAY QUE SACAR COLUMNA ADDRESS_ID Y REORDENAR DUPLCIADOS
+        # New surrogate key
+        dim_location = self._create_surrogate_key(dim_location_raw, "location_key")
+
+        print(f"dim_location table was successfully created!")
+
+        return dim_location
 
     # def build_dim_date(self, orders_df):
     #     oldest_year = dt.to_datetime(orders_df["order_date"]).min().dt.year
