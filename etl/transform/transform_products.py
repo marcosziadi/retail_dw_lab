@@ -3,26 +3,27 @@ from pathlib import Path
 
 from etl.extract import CSVExtractor
 
+RAW_PATH = Path("raw")
 
-def clean_products(products: pd.DataFrame, categories: pd.DataFrame) -> pd.DataFrame:
+def clean_products() -> pd.DataFrame:
     """
     DESCRIPTION
     """
 
-    categories_with_parents_name = pd.merge(
-        categories,
-        categories.add_prefix("parent_"),
-        on="parent_category_id",
-        how="left"
-    )[["category_id", "category_name", "parent_category_name"]]
+    extractor = CSVExtractor()
+    products = extractor.load_csv(RAW_PATH, "products")
+    categories = extractor.load_csv(RAW_PATH, "categories")
 
-    products_clean = pd.merge(
-        products,
-        categories_with_parents_name,
-        on = "category_id",
-        how = "left"
-    ).drop(columns=["category_id"])
+    categories_clean = (
+        categories.merge(categories.add_prefix("parent_"), on = "parent_category_id", how = "left")
+                .drop(columns = ["parent_category_id","parent_parent_category_id"])
+                .rename(columns = {"category_name": "category"})
+    )
+
+    products_clean = (
+        products.merge(categories_clean, on = "category_id", how = "left")
+                .drop(columns = ["category_id"])
+    )
 
     products_clean.to_csv("staging/products_clean.csv", index=False)
-
     print("products_clean.csv created!")

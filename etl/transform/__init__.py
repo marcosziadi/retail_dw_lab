@@ -1,6 +1,12 @@
 from .dim_builder import DimBuilder
+
 from .transform_products import clean_products
 from .transform_channels import clean_channels
 from .transform_campaigns import clean_campaigns
 from .transform_customers import clean_customers
-from .transform_locations import clean_locations
+from .transform_customer_addresses import clean_customer_addresses
+
+from .build_dimension_product import build_dim_product
+from .build_dimension_channel import build_dim_channel
+from .build_dimension_campaign import build_dim_campaign
+from .build_dimension_customer import build_dim_customer

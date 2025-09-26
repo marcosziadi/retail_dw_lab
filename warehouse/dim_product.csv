@@ -1,4 +1,4 @@
-product_id,sku,product_name,brand,unit_price,unit_cost,active_from,active_to,created_at,category_name,parent_category_name,product_key
+product_id,sku,product_name,brand,unit_price,unit_cost,active_from,active_to,created_at,category,parent_category_name,product_key
 1,SKU-00001,Andina Remeras 001,Andina,112524.82,68777.76,2025-02-05,,2025-02-05 03:43:54,Remeras,Ropa,1
 2,SKU-00002,Lago Remeras 002,Lago,9608.49,5509.74,2025-03-01,,2025-03-01 18:23:57,Remeras,Ropa,2
 3,SKU-00003,Lago Zapatillas 003,Lago,36963.89,25775.53,2025-07-27,,2025-07-27 00:14:11,Zapatillas,Calzado,3
