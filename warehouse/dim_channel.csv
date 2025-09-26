@@ -1,5 +1,5 @@
-channel_id,channel_name,description,channel_key
-1,Web,Tienda online desktop/mobile,1
-2,App,Aplicación móvil,2
-3,Marketplace,Marketplace externo,3
-4,Instagram Shop,Tienda social en Instagram,4
+channel_key,channel_id,channel_name,description
+1,1,Web,Tienda online desktop/mobile
+2,2,App,Aplicación móvil
+3,3,Marketplace,Marketplace externo
+4,4,Instagram Shop,Tienda social en Instagram

@@ -20,5 +20,22 @@ def build_dim_product() -> pd.DataFrame:
     
     dim_product["product_key"] = range(1, len(products_clean) + 1)
 
+    dim_product = (
+        dim_product[[
+            "product_key",
+            "product_id",
+            "sku",
+            "product_name",
+            "brand",
+            "unit_price",
+            "unit_cost",
+            "active_from",
+            "active_to",
+            "created_at",
+            "category",
+            "parent_category_name"
+        ]].copy()
+    )
+
     dim_product.to_csv("warehouse/dim_product.csv", index=False)
     print("dim_product.csv created!")

@@ -14,7 +14,14 @@ def build_dim_channel() -> pd.DataFrame:
     
     channel_clean["channel_key"] = range(1, len(channel_clean) + 1)
 
-    dim_channel = channel_clean.copy()
+    dim_channel = (
+        channel_clean[[
+            "channel_key",
+            "channel_id",
+            "channel_name",
+            "description"
+        ]].copy()
+    )
 
     dim_channel.to_csv("warehouse/dim_channel.csv", index=False)
     print("dim_channel.csv created!")

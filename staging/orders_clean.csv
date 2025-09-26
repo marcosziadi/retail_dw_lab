@@ -1,4 +1,4 @@
-order_id,customer_id,shipping_address_id,channel_id,order_status,order_date
+order_id,customer_id,address_id,channel_id,order_status,order_date
 100001,228,358,1,delivered,2025-08-24 05:25:58
 100002,101,156,3,delivered,2025-07-22 13:53:32
 100003,99,153,3,paid,2025-07-25 22:00:42

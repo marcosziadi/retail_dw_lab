@@ -24,8 +24,7 @@ def clean_orders() -> pd.DataFrame:
     orders_trimmed = orders[important_columns]
 
     paid_orders = orders_trimmed["order_status"].isin(["paid","shipped","delivered"])
-    orders_clean = orders_trimmed[paid_orders]
-
+    orders_clean = orders_trimmed[paid_orders].rename(columns = {"shipping_address_id": "address_id"})
 
     orders_clean.to_csv("staging/orders_clean.csv", index=False)
     print("orders_clean.csv created!")

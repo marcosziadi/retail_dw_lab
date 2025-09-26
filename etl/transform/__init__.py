@@ -1,5 +1,3 @@
-from .dim_builder import DimBuilder
-
 from .transform_products import clean_products
 from .transform_categories import clean_categories
 from .transform_channels import clean_channels
@@ -8,7 +6,9 @@ from .transform_customers import clean_customers
 from .transform_customer_addresses import clean_customer_addresses
 from .transform_orders import clean_orders
 from .transform_order_marketing import clean_order_marketing
+from .transform_order_items import clean_order_items
 
+from .build_fact_order_item_table import build_fact_order_item
 from .build_dimension_product import build_dim_product
 from .build_dimension_channel import build_dim_channel
 from .build_dimension_campaign import build_dim_campaign

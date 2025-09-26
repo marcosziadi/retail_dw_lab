@@ -2,7 +2,6 @@ import sys
 import os
 from pathlib import Path
 from etl.extract import CSVExtractor
-from etl.transform import DimBuilder
 
 from etl.transform import clean_products
 from etl.transform import clean_channels
@@ -12,12 +11,14 @@ from etl.transform import clean_customer_addresses
 from etl.transform import clean_categories
 from etl.transform import clean_orders
 from etl.transform import clean_order_marketing
+from etl.transform import clean_order_items
 
 from etl.transform import build_dim_product
 from etl.transform import build_dim_channel
 from etl.transform import build_dim_campaign
 from etl.transform import build_dim_customer
 from etl.transform import build_dim_location
+from etl.transform import build_fact_order_item
 
 from etl.load import CSVLoader
 from utils.config_loader import load_config # SE PODRIA ELIMINAR
@@ -47,6 +48,7 @@ def run_etl_pipeline():
         clean_customer_addresses()
         clean_orders()
         clean_order_marketing()
+        clean_order_items()
         
         # TRANSFORM
         print("\nTRANSFORMATION:\nCreating dimensions...")
@@ -57,7 +59,7 @@ def run_etl_pipeline():
         build_dim_location()
 
         print("\nCreating fact table...")
-        # build_fact_item_sell()
+        build_fact_order_item()
 
         # LOAD
         print("\nLOAD: Saving dimensions...")
