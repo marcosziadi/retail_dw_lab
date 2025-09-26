@@ -14,6 +14,7 @@ from etl.transform import build_dim_product
 from etl.transform import build_dim_channel
 from etl.transform import build_dim_campaign
 from etl.transform import build_dim_customer
+from etl.transform import build_dim_location
 
 from etl.load import CSVLoader
 from utils.config_loader import load_config # SE PODRIA ELIMINAR
@@ -47,6 +48,7 @@ def run_etl_pipeline():
         build_dim_channel()
         build_dim_campaign()
         build_dim_customer()
+        build_dim_location()
 
         # LOAD
         print("\nLOAD: Saving dimensions...")

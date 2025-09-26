@@ -1,395 +1,395 @@
-address_id,city,province,country_code
-1,Mendoza,Santa Fe,AR
-2,Neuquén,CABA,AR
-3,Salta,Neuquén,AR
-4,Comodoro Rivadavia,Mendoza,AR
-5,Salta,Neuquén,AR
-6,Comodoro Rivadavia,Tucumán,AR
-7,Neuquén,Neuquén,AR
-8,San Miguel de Tucumán,Mendoza,AR
-9,Mar del Plata,Entre Ríos,AR
-10,La Plata,Chubut,AR
-11,Rosario,Tucumán,AR
-12,Buenos Aires,Chubut,AR
-13,Mar del Plata,Córdoba,AR
-14,Neuquén,Santa Fe,AR
-15,Comodoro Rivadavia,Santa Fe,AR
-16,Mar del Plata,Chubut,AR
-17,La Plata,Tucumán,AR
-18,Salta,Mendoza,AR
-19,Rosario,CABA,AR
-20,Paraná,Salta,AR
-21,Córdoba,Tucumán,AR
-22,Mendoza,Salta,AR
-23,Paraná,Córdoba,AR
-24,Salta,Chubut,AR
-25,Paraná,Buenos Aires,AR
-26,Rosario,Chubut,AR
-27,Mar del Plata,Entre Ríos,AR
-28,Buenos Aires,Neuquén,AR
-29,La Plata,Buenos Aires,AR
-30,Mendoza,Tucumán,AR
-31,Córdoba,Mendoza,AR
-32,Neuquén,Salta,AR
-33,La Plata,Neuquén,AR
-34,Mar del Plata,Santa Fe,AR
-35,Mendoza,Entre Ríos,AR
-36,Mar del Plata,CABA,AR
-37,Mendoza,Chubut,AR
-38,Mendoza,Santa Fe,AR
-39,Rosario,Chubut,AR
-40,La Plata,Buenos Aires,AR
-41,Rosario,Salta,AR
-42,Salta,Salta,AR
-43,Mendoza,CABA,AR
-44,Mar del Plata,Santa Fe,AR
-45,Salta,Chubut,AR
-46,Neuquén,Salta,AR
-47,San Miguel de Tucumán,CABA,AR
-48,Rosario,Chubut,AR
-49,Mar del Plata,Buenos Aires,AR
-50,Comodoro Rivadavia,Córdoba,AR
-51,Rosario,Entre Ríos,AR
-52,San Miguel de Tucumán,CABA,AR
-53,Neuquén,Córdoba,AR
-54,San Miguel de Tucumán,Santa Fe,AR
-55,Neuquén,Tucumán,AR
-56,Rosario,Santa Fe,AR
-57,Comodoro Rivadavia,CABA,AR
-58,Córdoba,Santa Fe,AR
-59,CABA,Entre Ríos,AR
-60,Buenos Aires,Córdoba,AR
-61,Mar del Plata,Buenos Aires,AR
-62,Rosario,Tucumán,AR
-63,Neuquén,Córdoba,AR
-64,Comodoro Rivadavia,Mendoza,AR
-65,Rosario,Buenos Aires,AR
-66,Mar del Plata,Mendoza,AR
-67,Neuquén,Neuquén,AR
-68,Comodoro Rivadavia,Santa Fe,AR
-69,Salta,Chubut,AR
-70,CABA,Mendoza,AR
-71,Mar del Plata,Salta,AR
-72,Salta,Salta,AR
-73,Rosario,Buenos Aires,AR
-74,Córdoba,Santa Fe,AR
-75,Buenos Aires,Entre Ríos,AR
-76,San Miguel de Tucumán,Buenos Aires,AR
-77,Córdoba,Chubut,AR
-78,CABA,Entre Ríos,AR
-79,Salta,Chubut,AR
-80,Paraná,Tucumán,AR
-81,Buenos Aires,Santa Fe,AR
-82,CABA,CABA,AR
-83,Mendoza,Mendoza,AR
-84,Mendoza,Neuquén,AR
-85,San Miguel de Tucumán,Santa Fe,AR
-86,Rosario,Tucumán,AR
-87,Buenos Aires,Chubut,AR
-88,La Plata,Santa Fe,AR
-89,Neuquén,Chubut,AR
-90,Neuquén,Mendoza,AR
-91,La Plata,Salta,AR
-92,Rosario,Santa Fe,AR
-93,Paraná,Salta,AR
-94,Paraná,Entre Ríos,AR
-95,Comodoro Rivadavia,Santa Fe,AR
-96,Neuquén,CABA,AR
-97,La Plata,Santa Fe,AR
-98,La Plata,Salta,AR
-99,Rosario,Buenos Aires,AR
-100,Mar del Plata,CABA,AR
-101,San Miguel de Tucumán,Salta,AR
-102,Paraná,Córdoba,AR
-103,Mendoza,CABA,AR
-104,Salta,Santa Fe,AR
-105,Rosario,Córdoba,AR
-106,San Miguel de Tucumán,Córdoba,AR
-107,Mar del Plata,Chubut,AR
-108,Paraná,Mendoza,AR
-109,Salta,Entre Ríos,AR
-110,Mar del Plata,Tucumán,AR
-111,Salta,Santa Fe,AR
-112,Mendoza,Córdoba,AR
-113,Buenos Aires,CABA,AR
-114,Paraná,Córdoba,AR
-115,Córdoba,Entre Ríos,AR
-116,Córdoba,Tucumán,AR
-117,Mar del Plata,Entre Ríos,AR
-118,Comodoro Rivadavia,Córdoba,AR
-119,CABA,Chubut,AR
-120,Neuquén,Salta,AR
-121,Mar del Plata,Mendoza,AR
-122,Comodoro Rivadavia,CABA,AR
-123,Buenos Aires,Mendoza,AR
-124,Mar del Plata,Salta,AR
-125,Neuquén,Mendoza,AR
-126,Salta,Salta,AR
-127,Salta,Tucumán,AR
-128,Rosario,Tucumán,AR
-129,Mendoza,Neuquén,AR
-130,Paraná,Córdoba,AR
-131,Rosario,Tucumán,AR
-132,La Plata,Neuquén,AR
-133,Buenos Aires,Neuquén,AR
-134,San Miguel de Tucumán,Córdoba,AR
-135,Buenos Aires,Entre Ríos,AR
-136,CABA,Entre Ríos,AR
-137,Córdoba,Córdoba,AR
-138,Rosario,Salta,AR
-139,Córdoba,CABA,AR
-140,La Plata,Neuquén,AR
-141,Buenos Aires,Santa Fe,AR
-142,Rosario,CABA,AR
-143,Buenos Aires,Santa Fe,AR
-144,Comodoro Rivadavia,Entre Ríos,AR
-145,Mar del Plata,Tucumán,AR
-146,Salta,Buenos Aires,AR
-147,Comodoro Rivadavia,CABA,AR
-148,Neuquén,Buenos Aires,AR
-149,CABA,Salta,AR
-150,Rosario,Neuquén,AR
-151,Buenos Aires,Neuquén,AR
-152,Buenos Aires,Salta,AR
-153,Mar del Plata,Buenos Aires,AR
-154,Neuquén,Santa Fe,AR
-155,Rosario,Santa Fe,AR
-156,Mendoza,Neuquén,AR
-157,Salta,Santa Fe,AR
-158,Mendoza,Santa Fe,AR
-159,La Plata,Córdoba,AR
-160,Mendoza,Salta,AR
-161,Mar del Plata,Buenos Aires,AR
-162,Paraná,Salta,AR
-163,Salta,Chubut,AR
-164,Córdoba,Salta,AR
-165,Mar del Plata,Mendoza,AR
-166,Buenos Aires,Mendoza,AR
-167,Comodoro Rivadavia,Santa Fe,AR
-168,Comodoro Rivadavia,Entre Ríos,AR
-169,Buenos Aires,Neuquén,AR
-170,Mendoza,Córdoba,AR
-171,Mar del Plata,Tucumán,AR
-172,CABA,Córdoba,AR
-173,Córdoba,CABA,AR
-174,Buenos Aires,Buenos Aires,AR
-175,Rosario,Buenos Aires,AR
-176,CABA,Neuquén,AR
-177,La Plata,Santa Fe,AR
-178,Buenos Aires,Tucumán,AR
-179,San Miguel de Tucumán,Mendoza,AR
-180,San Miguel de Tucumán,Chubut,AR
-181,CABA,Córdoba,AR
-182,Salta,Santa Fe,AR
-183,Córdoba,Córdoba,AR
-184,Paraná,CABA,AR
-185,Salta,Chubut,AR
-186,Mendoza,Chubut,AR
-187,CABA,Tucumán,AR
-188,Mendoza,Neuquén,AR
-189,San Miguel de Tucumán,Santa Fe,AR
-190,Mar del Plata,Buenos Aires,AR
-191,Buenos Aires,Neuquén,AR
-192,Comodoro Rivadavia,Neuquén,AR
-193,CABA,Mendoza,AR
-194,Neuquén,Salta,AR
-195,Rosario,Neuquén,AR
-196,Mendoza,CABA,AR
-197,Córdoba,Mendoza,AR
-198,San Miguel de Tucumán,Mendoza,AR
-199,Córdoba,Entre Ríos,AR
-200,CABA,Mendoza,AR
-201,La Plata,Neuquén,AR
-202,Neuquén,Santa Fe,AR
-203,La Plata,Córdoba,AR
-204,Buenos Aires,Buenos Aires,AR
-205,San Miguel de Tucumán,Neuquén,AR
-206,Buenos Aires,Tucumán,AR
-207,La Plata,Córdoba,AR
-208,Comodoro Rivadavia,Chubut,AR
-209,Córdoba,Córdoba,AR
-210,CABA,Tucumán,AR
-211,San Miguel de Tucumán,Neuquén,AR
-212,Córdoba,Córdoba,AR
-213,La Plata,Mendoza,AR
-214,Rosario,Santa Fe,AR
-215,La Plata,CABA,AR
-216,Buenos Aires,Córdoba,AR
-217,La Plata,CABA,AR
-218,San Miguel de Tucumán,Salta,AR
-219,Paraná,Entre Ríos,AR
-220,CABA,Buenos Aires,AR
-221,Mar del Plata,Salta,AR
-222,Neuquén,Buenos Aires,AR
-223,La Plata,Santa Fe,AR
-224,Buenos Aires,Chubut,AR
-225,Salta,Entre Ríos,AR
-226,Buenos Aires,Santa Fe,AR
-227,La Plata,Salta,AR
-228,Córdoba,Salta,AR
-229,Mar del Plata,Chubut,AR
-230,Mendoza,Entre Ríos,AR
-231,Rosario,Chubut,AR
-232,Neuquén,Córdoba,AR
-233,San Miguel de Tucumán,Buenos Aires,AR
-234,Rosario,Córdoba,AR
-235,Neuquén,Santa Fe,AR
-236,Comodoro Rivadavia,Tucumán,AR
-237,Neuquén,Mendoza,AR
-238,Buenos Aires,Mendoza,AR
-239,CABA,CABA,AR
-240,Mendoza,Tucumán,AR
-241,Comodoro Rivadavia,Entre Ríos,AR
-242,San Miguel de Tucumán,CABA,AR
-243,La Plata,Chubut,AR
-244,Córdoba,CABA,AR
-245,CABA,Neuquén,AR
-246,Rosario,Córdoba,AR
-247,Paraná,Buenos Aires,AR
-248,Salta,Buenos Aires,AR
-249,Neuquén,Salta,AR
-250,Córdoba,Mendoza,AR
-251,Mar del Plata,Chubut,AR
-252,Paraná,Mendoza,AR
-253,Salta,Entre Ríos,AR
-254,Mar del Plata,Entre Ríos,AR
-255,Salta,Tucumán,AR
-256,CABA,CABA,AR
-257,Mendoza,Córdoba,AR
-258,Neuquén,Chubut,AR
-259,Paraná,Entre Ríos,AR
-260,Córdoba,Neuquén,AR
-261,La Plata,Tucumán,AR
-262,Neuquén,CABA,AR
-263,Mendoza,Tucumán,AR
-264,Comodoro Rivadavia,Tucumán,AR
-265,CABA,Tucumán,AR
-266,Paraná,Córdoba,AR
-267,Mar del Plata,Mendoza,AR
-268,Mar del Plata,Entre Ríos,AR
-269,Salta,Tucumán,AR
-270,La Plata,Entre Ríos,AR
-271,Neuquén,Salta,AR
-272,La Plata,Santa Fe,AR
-273,Buenos Aires,Santa Fe,AR
-274,Rosario,Entre Ríos,AR
-275,Rosario,Entre Ríos,AR
-276,CABA,Salta,AR
-277,La Plata,Córdoba,AR
-278,Rosario,CABA,AR
-279,Rosario,Chubut,AR
-280,Comodoro Rivadavia,Santa Fe,AR
-281,CABA,Buenos Aires,AR
-282,Comodoro Rivadavia,Chubut,AR
-283,Neuquén,CABA,AR
-284,Paraná,Neuquén,AR
-285,La Plata,Mendoza,AR
-286,La Plata,Tucumán,AR
-287,Comodoro Rivadavia,Santa Fe,AR
-288,Mar del Plata,Tucumán,AR
-289,Mar del Plata,Neuquén,AR
-290,Mar del Plata,Entre Ríos,AR
-291,Buenos Aires,Buenos Aires,AR
-292,Mendoza,Tucumán,AR
-293,Mendoza,Tucumán,AR
-294,Comodoro Rivadavia,Córdoba,AR
-295,Mar del Plata,Neuquén,AR
-296,Salta,Mendoza,AR
-297,Córdoba,Entre Ríos,AR
-298,Mendoza,Mendoza,AR
-299,Comodoro Rivadavia,Entre Ríos,AR
-300,Mendoza,Santa Fe,AR
-301,Mar del Plata,Buenos Aires,AR
-302,La Plata,Chubut,AR
-303,Rosario,Salta,AR
-304,Neuquén,Neuquén,AR
-305,Mar del Plata,Chubut,AR
-306,Rosario,Neuquén,AR
-307,Buenos Aires,Buenos Aires,AR
-308,Córdoba,Entre Ríos,AR
-309,Neuquén,Salta,AR
-310,Rosario,Mendoza,AR
-311,Mar del Plata,CABA,AR
-312,Buenos Aires,Chubut,AR
-313,CABA,Neuquén,AR
-314,La Plata,Tucumán,AR
-315,La Plata,Salta,AR
-316,Salta,Santa Fe,AR
-317,Salta,Mendoza,AR
-318,Paraná,Buenos Aires,AR
-319,Comodoro Rivadavia,Buenos Aires,AR
-320,Córdoba,CABA,AR
-321,Mendoza,Santa Fe,AR
-322,Córdoba,Neuquén,AR
-323,Rosario,Neuquén,AR
-324,San Miguel de Tucumán,Chubut,AR
-325,Mar del Plata,Chubut,AR
-326,La Plata,Tucumán,AR
-327,Paraná,Salta,AR
-328,Comodoro Rivadavia,Santa Fe,AR
-329,Comodoro Rivadavia,Buenos Aires,AR
-330,Comodoro Rivadavia,Santa Fe,AR
-331,Neuquén,Córdoba,AR
-332,San Miguel de Tucumán,Santa Fe,AR
-333,Salta,Neuquén,AR
-334,Neuquén,Mendoza,AR
-335,Mendoza,Neuquén,AR
-336,Salta,Tucumán,AR
-337,Buenos Aires,Mendoza,AR
-338,Paraná,Buenos Aires,AR
-339,Mendoza,Buenos Aires,AR
-340,Mar del Plata,Salta,AR
-341,Neuquén,Buenos Aires,AR
-342,Neuquén,Santa Fe,AR
-343,San Miguel de Tucumán,Mendoza,AR
-344,Comodoro Rivadavia,Tucumán,AR
-345,Córdoba,Santa Fe,AR
-346,Buenos Aires,Neuquén,AR
-347,Neuquén,Chubut,AR
-348,Córdoba,Mendoza,AR
-349,La Plata,Buenos Aires,AR
-350,La Plata,Chubut,AR
-351,Mendoza,Tucumán,AR
-352,Paraná,Salta,AR
-353,Paraná,Entre Ríos,AR
-354,Neuquén,Entre Ríos,AR
-355,Mar del Plata,Chubut,AR
-356,San Miguel de Tucumán,Salta,AR
-357,La Plata,Santa Fe,AR
-358,CABA,CABA,AR
-359,Salta,Entre Ríos,AR
-360,Córdoba,Salta,AR
-361,Comodoro Rivadavia,Neuquén,AR
-362,Comodoro Rivadavia,Entre Ríos,AR
-363,Salta,Neuquén,AR
-364,Rosario,Mendoza,AR
-365,CABA,Buenos Aires,AR
-366,Buenos Aires,Neuquén,AR
-367,La Plata,Tucumán,AR
-368,San Miguel de Tucumán,Buenos Aires,AR
-369,La Plata,Córdoba,AR
-370,Salta,Neuquén,AR
-371,Buenos Aires,Tucumán,AR
-372,Buenos Aires,CABA,AR
-373,La Plata,Salta,AR
-374,La Plata,Córdoba,AR
-375,La Plata,Chubut,AR
-376,Mar del Plata,Neuquén,AR
-377,Paraná,Chubut,AR
-378,Comodoro Rivadavia,Entre Ríos,AR
-379,Paraná,Tucumán,AR
-380,Comodoro Rivadavia,Mendoza,AR
-381,Paraná,Entre Ríos,AR
-382,CABA,Mendoza,AR
-383,Córdoba,Neuquén,AR
-384,Neuquén,Neuquén,AR
-385,CABA,Salta,AR
-386,Paraná,Buenos Aires,AR
-387,Rosario,Santa Fe,AR
-388,Mendoza,Chubut,AR
-389,La Plata,Córdoba,AR
-390,CABA,Córdoba,AR
-391,La Plata,Neuquén,AR
-392,Mar del Plata,Santa Fe,AR
-393,Rosario,Córdoba,AR
-394,CABA,Salta,AR
+address_id,address_type,city,province,country_code
+1,shipping,Mendoza,Santa Fe,AR
+2,billing,Neuquén,CABA,AR
+3,shipping,Salta,Neuquén,AR
+4,shipping,Comodoro Rivadavia,Mendoza,AR
+5,billing,Salta,Neuquén,AR
+6,shipping,Comodoro Rivadavia,Tucumán,AR
+7,shipping,Neuquén,Neuquén,AR
+8,billing,San Miguel de Tucumán,Mendoza,AR
+9,shipping,Mar del Plata,Entre Ríos,AR
+10,shipping,La Plata,Chubut,AR
+11,billing,Rosario,Tucumán,AR
+12,shipping,Buenos Aires,Chubut,AR
+13,billing,Mar del Plata,Córdoba,AR
+14,shipping,Neuquén,Santa Fe,AR
+15,shipping,Comodoro Rivadavia,Santa Fe,AR
+16,shipping,Mar del Plata,Chubut,AR
+17,shipping,La Plata,Tucumán,AR
+18,billing,Salta,Mendoza,AR
+19,shipping,Rosario,CABA,AR
+20,billing,Paraná,Salta,AR
+21,shipping,Córdoba,Tucumán,AR
+22,shipping,Mendoza,Salta,AR
+23,shipping,Paraná,Córdoba,AR
+24,shipping,Salta,Chubut,AR
+25,billing,Paraná,Buenos Aires,AR
+26,shipping,Rosario,Chubut,AR
+27,billing,Mar del Plata,Entre Ríos,AR
+28,shipping,Buenos Aires,Neuquén,AR
+29,billing,La Plata,Buenos Aires,AR
+30,shipping,Mendoza,Tucumán,AR
+31,shipping,Córdoba,Mendoza,AR
+32,billing,Neuquén,Salta,AR
+33,shipping,La Plata,Neuquén,AR
+34,shipping,Mar del Plata,Santa Fe,AR
+35,billing,Mendoza,Entre Ríos,AR
+36,shipping,Mar del Plata,CABA,AR
+37,billing,Mendoza,Chubut,AR
+38,shipping,Mendoza,Santa Fe,AR
+39,billing,Rosario,Chubut,AR
+40,shipping,La Plata,Buenos Aires,AR
+41,shipping,Rosario,Salta,AR
+42,billing,Salta,Salta,AR
+43,shipping,Mendoza,CABA,AR
+44,billing,Mar del Plata,Santa Fe,AR
+45,shipping,Salta,Chubut,AR
+46,billing,Neuquén,Salta,AR
+47,shipping,San Miguel de Tucumán,CABA,AR
+48,shipping,Rosario,Chubut,AR
+49,shipping,Mar del Plata,Buenos Aires,AR
+50,billing,Comodoro Rivadavia,Córdoba,AR
+51,shipping,Rosario,Entre Ríos,AR
+52,billing,San Miguel de Tucumán,CABA,AR
+53,shipping,Neuquén,Córdoba,AR
+54,shipping,San Miguel de Tucumán,Santa Fe,AR
+55,shipping,Neuquén,Tucumán,AR
+56,billing,Rosario,Santa Fe,AR
+57,shipping,Comodoro Rivadavia,CABA,AR
+58,shipping,Córdoba,Santa Fe,AR
+59,billing,CABA,Entre Ríos,AR
+60,shipping,Buenos Aires,Córdoba,AR
+61,shipping,Mar del Plata,Buenos Aires,AR
+62,shipping,Rosario,Tucumán,AR
+63,billing,Neuquén,Córdoba,AR
+64,shipping,Comodoro Rivadavia,Mendoza,AR
+65,shipping,Rosario,Buenos Aires,AR
+66,shipping,Mar del Plata,Mendoza,AR
+67,shipping,Neuquén,Neuquén,AR
+68,shipping,Comodoro Rivadavia,Santa Fe,AR
+69,billing,Salta,Chubut,AR
+70,shipping,CABA,Mendoza,AR
+71,shipping,Mar del Plata,Salta,AR
+72,billing,Salta,Salta,AR
+73,shipping,Rosario,Buenos Aires,AR
+74,billing,Córdoba,Santa Fe,AR
+75,shipping,Buenos Aires,Entre Ríos,AR
+76,billing,San Miguel de Tucumán,Buenos Aires,AR
+77,shipping,Córdoba,Chubut,AR
+78,billing,CABA,Entre Ríos,AR
+79,shipping,Salta,Chubut,AR
+80,shipping,Paraná,Tucumán,AR
+81,billing,Buenos Aires,Santa Fe,AR
+82,shipping,CABA,CABA,AR
+83,shipping,Mendoza,Mendoza,AR
+84,billing,Mendoza,Neuquén,AR
+85,shipping,San Miguel de Tucumán,Santa Fe,AR
+86,billing,Rosario,Tucumán,AR
+87,shipping,Buenos Aires,Chubut,AR
+88,billing,La Plata,Santa Fe,AR
+89,shipping,Neuquén,Chubut,AR
+90,billing,Neuquén,Mendoza,AR
+91,shipping,La Plata,Salta,AR
+92,billing,Rosario,Santa Fe,AR
+93,shipping,Paraná,Salta,AR
+94,shipping,Paraná,Entre Ríos,AR
+95,billing,Comodoro Rivadavia,Santa Fe,AR
+96,shipping,Neuquén,CABA,AR
+97,billing,La Plata,Santa Fe,AR
+98,shipping,La Plata,Salta,AR
+99,shipping,Rosario,Buenos Aires,AR
+100,billing,Mar del Plata,CABA,AR
+101,shipping,San Miguel de Tucumán,Salta,AR
+102,billing,Paraná,Córdoba,AR
+103,shipping,Mendoza,CABA,AR
+104,billing,Salta,Santa Fe,AR
+105,shipping,Rosario,Córdoba,AR
+106,billing,San Miguel de Tucumán,Córdoba,AR
+107,shipping,Mar del Plata,Chubut,AR
+108,shipping,Paraná,Mendoza,AR
+109,billing,Salta,Entre Ríos,AR
+110,shipping,Mar del Plata,Tucumán,AR
+111,shipping,Salta,Santa Fe,AR
+112,shipping,Mendoza,Córdoba,AR
+113,shipping,Buenos Aires,CABA,AR
+114,shipping,Paraná,Córdoba,AR
+115,billing,Córdoba,Entre Ríos,AR
+116,shipping,Córdoba,Tucumán,AR
+117,shipping,Mar del Plata,Entre Ríos,AR
+118,shipping,Comodoro Rivadavia,Córdoba,AR
+119,billing,CABA,Chubut,AR
+120,shipping,Neuquén,Salta,AR
+121,shipping,Mar del Plata,Mendoza,AR
+122,billing,Comodoro Rivadavia,CABA,AR
+123,shipping,Buenos Aires,Mendoza,AR
+124,shipping,Mar del Plata,Salta,AR
+125,shipping,Neuquén,Mendoza,AR
+126,shipping,Salta,Salta,AR
+127,shipping,Salta,Tucumán,AR
+128,shipping,Rosario,Tucumán,AR
+129,billing,Mendoza,Neuquén,AR
+130,shipping,Paraná,Córdoba,AR
+131,billing,Rosario,Tucumán,AR
+132,shipping,La Plata,Neuquén,AR
+133,billing,Buenos Aires,Neuquén,AR
+134,shipping,San Miguel de Tucumán,Córdoba,AR
+135,billing,Buenos Aires,Entre Ríos,AR
+136,shipping,CABA,Entre Ríos,AR
+137,billing,Córdoba,Córdoba,AR
+138,shipping,Rosario,Salta,AR
+139,billing,Córdoba,CABA,AR
+140,shipping,La Plata,Neuquén,AR
+141,billing,Buenos Aires,Santa Fe,AR
+142,shipping,Rosario,CABA,AR
+143,shipping,Buenos Aires,Santa Fe,AR
+144,billing,Comodoro Rivadavia,Entre Ríos,AR
+145,shipping,Mar del Plata,Tucumán,AR
+146,shipping,Salta,Buenos Aires,AR
+147,billing,Comodoro Rivadavia,CABA,AR
+148,shipping,Neuquén,Buenos Aires,AR
+149,billing,CABA,Salta,AR
+150,shipping,Rosario,Neuquén,AR
+151,billing,Buenos Aires,Neuquén,AR
+152,shipping,Buenos Aires,Salta,AR
+153,shipping,Mar del Plata,Buenos Aires,AR
+154,billing,Neuquén,Santa Fe,AR
+155,shipping,Rosario,Santa Fe,AR
+156,shipping,Mendoza,Neuquén,AR
+157,billing,Salta,Santa Fe,AR
+158,shipping,Mendoza,Santa Fe,AR
+159,shipping,La Plata,Córdoba,AR
+160,billing,Mendoza,Salta,AR
+161,shipping,Mar del Plata,Buenos Aires,AR
+162,billing,Paraná,Salta,AR
+163,shipping,Salta,Chubut,AR
+164,billing,Córdoba,Salta,AR
+165,shipping,Mar del Plata,Mendoza,AR
+166,billing,Buenos Aires,Mendoza,AR
+167,shipping,Comodoro Rivadavia,Santa Fe,AR
+168,shipping,Comodoro Rivadavia,Entre Ríos,AR
+169,shipping,Buenos Aires,Neuquén,AR
+170,billing,Mendoza,Córdoba,AR
+171,shipping,Mar del Plata,Tucumán,AR
+172,shipping,CABA,Córdoba,AR
+173,shipping,Córdoba,CABA,AR
+174,shipping,Buenos Aires,Buenos Aires,AR
+175,shipping,Rosario,Buenos Aires,AR
+176,shipping,CABA,Neuquén,AR
+177,shipping,La Plata,Santa Fe,AR
+178,billing,Buenos Aires,Tucumán,AR
+179,shipping,San Miguel de Tucumán,Mendoza,AR
+180,billing,San Miguel de Tucumán,Chubut,AR
+181,shipping,CABA,Córdoba,AR
+182,shipping,Salta,Santa Fe,AR
+183,shipping,Córdoba,Córdoba,AR
+184,billing,Paraná,CABA,AR
+185,shipping,Salta,Chubut,AR
+186,shipping,Mendoza,Chubut,AR
+187,shipping,CABA,Tucumán,AR
+188,shipping,Mendoza,Neuquén,AR
+189,billing,San Miguel de Tucumán,Santa Fe,AR
+190,shipping,Mar del Plata,Buenos Aires,AR
+191,billing,Buenos Aires,Neuquén,AR
+192,shipping,Comodoro Rivadavia,Neuquén,AR
+193,billing,CABA,Mendoza,AR
+194,shipping,Neuquén,Salta,AR
+195,shipping,Rosario,Neuquén,AR
+196,shipping,Mendoza,CABA,AR
+197,billing,Córdoba,Mendoza,AR
+198,shipping,San Miguel de Tucumán,Mendoza,AR
+199,billing,Córdoba,Entre Ríos,AR
+200,shipping,CABA,Mendoza,AR
+201,shipping,La Plata,Neuquén,AR
+202,billing,Neuquén,Santa Fe,AR
+203,shipping,La Plata,Córdoba,AR
+204,billing,Buenos Aires,Buenos Aires,AR
+205,shipping,San Miguel de Tucumán,Neuquén,AR
+206,billing,Buenos Aires,Tucumán,AR
+207,shipping,La Plata,Córdoba,AR
+208,billing,Comodoro Rivadavia,Chubut,AR
+209,shipping,Córdoba,Córdoba,AR
+210,billing,CABA,Tucumán,AR
+211,shipping,San Miguel de Tucumán,Neuquén,AR
+212,billing,Córdoba,Córdoba,AR
+213,shipping,La Plata,Mendoza,AR
+214,billing,Rosario,Santa Fe,AR
+215,shipping,La Plata,CABA,AR
+216,shipping,Buenos Aires,Córdoba,AR
+217,billing,La Plata,CABA,AR
+218,shipping,San Miguel de Tucumán,Salta,AR
+219,shipping,Paraná,Entre Ríos,AR
+220,shipping,CABA,Buenos Aires,AR
+221,shipping,Mar del Plata,Salta,AR
+222,shipping,Neuquén,Buenos Aires,AR
+223,billing,La Plata,Santa Fe,AR
+224,shipping,Buenos Aires,Chubut,AR
+225,shipping,Salta,Entre Ríos,AR
+226,billing,Buenos Aires,Santa Fe,AR
+227,shipping,La Plata,Salta,AR
+228,billing,Córdoba,Salta,AR
+229,shipping,Mar del Plata,Chubut,AR
+230,shipping,Mendoza,Entre Ríos,AR
+231,shipping,Rosario,Chubut,AR
+232,shipping,Neuquén,Córdoba,AR
+233,shipping,San Miguel de Tucumán,Buenos Aires,AR
+234,billing,Rosario,Córdoba,AR
+235,shipping,Neuquén,Santa Fe,AR
+236,shipping,Comodoro Rivadavia,Tucumán,AR
+237,shipping,Neuquén,Mendoza,AR
+238,billing,Buenos Aires,Mendoza,AR
+239,shipping,CABA,CABA,AR
+240,shipping,Mendoza,Tucumán,AR
+241,shipping,Comodoro Rivadavia,Entre Ríos,AR
+242,billing,San Miguel de Tucumán,CABA,AR
+243,shipping,La Plata,Chubut,AR
+244,billing,Córdoba,CABA,AR
+245,shipping,CABA,Neuquén,AR
+246,billing,Rosario,Córdoba,AR
+247,shipping,Paraná,Buenos Aires,AR
+248,shipping,Salta,Buenos Aires,AR
+249,billing,Neuquén,Salta,AR
+250,shipping,Córdoba,Mendoza,AR
+251,billing,Mar del Plata,Chubut,AR
+252,shipping,Paraná,Mendoza,AR
+253,billing,Salta,Entre Ríos,AR
+254,shipping,Mar del Plata,Entre Ríos,AR
+255,shipping,Salta,Tucumán,AR
+256,shipping,CABA,CABA,AR
+257,shipping,Mendoza,Córdoba,AR
+258,billing,Neuquén,Chubut,AR
+259,shipping,Paraná,Entre Ríos,AR
+260,billing,Córdoba,Neuquén,AR
+261,shipping,La Plata,Tucumán,AR
+262,shipping,Neuquén,CABA,AR
+263,billing,Mendoza,Tucumán,AR
+264,shipping,Comodoro Rivadavia,Tucumán,AR
+265,billing,CABA,Tucumán,AR
+266,shipping,Paraná,Córdoba,AR
+267,billing,Mar del Plata,Mendoza,AR
+268,shipping,Mar del Plata,Entre Ríos,AR
+269,billing,Salta,Tucumán,AR
+270,shipping,La Plata,Entre Ríos,AR
+271,shipping,Neuquén,Salta,AR
+272,shipping,La Plata,Santa Fe,AR
+273,billing,Buenos Aires,Santa Fe,AR
+274,shipping,Rosario,Entre Ríos,AR
+275,billing,Rosario,Entre Ríos,AR
+276,shipping,CABA,Salta,AR
+277,billing,La Plata,Córdoba,AR
+278,shipping,Rosario,CABA,AR
+279,shipping,Rosario,Chubut,AR
+280,billing,Comodoro Rivadavia,Santa Fe,AR
+281,shipping,CABA,Buenos Aires,AR
+282,billing,Comodoro Rivadavia,Chubut,AR
+283,shipping,Neuquén,CABA,AR
+284,shipping,Paraná,Neuquén,AR
+285,billing,La Plata,Mendoza,AR
+286,shipping,La Plata,Tucumán,AR
+287,billing,Comodoro Rivadavia,Santa Fe,AR
+288,shipping,Mar del Plata,Tucumán,AR
+289,shipping,Mar del Plata,Neuquén,AR
+290,billing,Mar del Plata,Entre Ríos,AR
+291,shipping,Buenos Aires,Buenos Aires,AR
+292,billing,Mendoza,Tucumán,AR
+293,shipping,Mendoza,Tucumán,AR
+294,billing,Comodoro Rivadavia,Córdoba,AR
+295,shipping,Mar del Plata,Neuquén,AR
+296,shipping,Salta,Mendoza,AR
+297,shipping,Córdoba,Entre Ríos,AR
+298,billing,Mendoza,Mendoza,AR
+299,shipping,Comodoro Rivadavia,Entre Ríos,AR
+300,billing,Mendoza,Santa Fe,AR
+301,shipping,Mar del Plata,Buenos Aires,AR
+302,shipping,La Plata,Chubut,AR
+303,billing,Rosario,Salta,AR
+304,shipping,Neuquén,Neuquén,AR
+305,billing,Mar del Plata,Chubut,AR
+306,shipping,Rosario,Neuquén,AR
+307,billing,Buenos Aires,Buenos Aires,AR
+308,shipping,Córdoba,Entre Ríos,AR
+309,billing,Neuquén,Salta,AR
+310,shipping,Rosario,Mendoza,AR
+311,billing,Mar del Plata,CABA,AR
+312,shipping,Buenos Aires,Chubut,AR
+313,billing,CABA,Neuquén,AR
+314,shipping,La Plata,Tucumán,AR
+315,billing,La Plata,Salta,AR
+316,shipping,Salta,Santa Fe,AR
+317,shipping,Salta,Mendoza,AR
+318,billing,Paraná,Buenos Aires,AR
+319,shipping,Comodoro Rivadavia,Buenos Aires,AR
+320,billing,Córdoba,CABA,AR
+321,shipping,Mendoza,Santa Fe,AR
+322,shipping,Córdoba,Neuquén,AR
+323,billing,Rosario,Neuquén,AR
+324,shipping,San Miguel de Tucumán,Chubut,AR
+325,shipping,Mar del Plata,Chubut,AR
+326,billing,La Plata,Tucumán,AR
+327,shipping,Paraná,Salta,AR
+328,billing,Comodoro Rivadavia,Santa Fe,AR
+329,shipping,Comodoro Rivadavia,Buenos Aires,AR
+330,shipping,Comodoro Rivadavia,Santa Fe,AR
+331,shipping,Neuquén,Córdoba,AR
+332,shipping,San Miguel de Tucumán,Santa Fe,AR
+333,billing,Salta,Neuquén,AR
+334,shipping,Neuquén,Mendoza,AR
+335,billing,Mendoza,Neuquén,AR
+336,shipping,Salta,Tucumán,AR
+337,billing,Buenos Aires,Mendoza,AR
+338,shipping,Paraná,Buenos Aires,AR
+339,billing,Mendoza,Buenos Aires,AR
+340,shipping,Mar del Plata,Salta,AR
+341,billing,Neuquén,Buenos Aires,AR
+342,shipping,Neuquén,Santa Fe,AR
+343,billing,San Miguel de Tucumán,Mendoza,AR
+344,shipping,Comodoro Rivadavia,Tucumán,AR
+345,billing,Córdoba,Santa Fe,AR
+346,shipping,Buenos Aires,Neuquén,AR
+347,billing,Neuquén,Chubut,AR
+348,shipping,Córdoba,Mendoza,AR
+349,billing,La Plata,Buenos Aires,AR
+350,shipping,La Plata,Chubut,AR
+351,shipping,Mendoza,Tucumán,AR
+352,shipping,Paraná,Salta,AR
+353,billing,Paraná,Entre Ríos,AR
+354,shipping,Neuquén,Entre Ríos,AR
+355,billing,Mar del Plata,Chubut,AR
+356,shipping,San Miguel de Tucumán,Salta,AR
+357,billing,La Plata,Santa Fe,AR
+358,shipping,CABA,CABA,AR
+359,billing,Salta,Entre Ríos,AR
+360,shipping,Córdoba,Salta,AR
+361,billing,Comodoro Rivadavia,Neuquén,AR
+362,shipping,Comodoro Rivadavia,Entre Ríos,AR
+363,billing,Salta,Neuquén,AR
+364,shipping,Rosario,Mendoza,AR
+365,billing,CABA,Buenos Aires,AR
+366,shipping,Buenos Aires,Neuquén,AR
+367,shipping,La Plata,Tucumán,AR
+368,shipping,San Miguel de Tucumán,Buenos Aires,AR
+369,billing,La Plata,Córdoba,AR
+370,shipping,Salta,Neuquén,AR
+371,shipping,Buenos Aires,Tucumán,AR
+372,billing,Buenos Aires,CABA,AR
+373,shipping,La Plata,Salta,AR
+374,billing,La Plata,Córdoba,AR
+375,shipping,La Plata,Chubut,AR
+376,shipping,Mar del Plata,Neuquén,AR
+377,shipping,Paraná,Chubut,AR
+378,shipping,Comodoro Rivadavia,Entre Ríos,AR
+379,billing,Paraná,Tucumán,AR
+380,shipping,Comodoro Rivadavia,Mendoza,AR
+381,billing,Paraná,Entre Ríos,AR
+382,shipping,CABA,Mendoza,AR
+383,billing,Córdoba,Neuquén,AR
+384,shipping,Neuquén,Neuquén,AR
+385,shipping,CABA,Salta,AR
+386,billing,Paraná,Buenos Aires,AR
+387,shipping,Rosario,Santa Fe,AR
+388,shipping,Mendoza,Chubut,AR
+389,billing,La Plata,Córdoba,AR
+390,shipping,CABA,Córdoba,AR
+391,shipping,La Plata,Neuquén,AR
+392,billing,Mar del Plata,Santa Fe,AR
+393,shipping,Rosario,Córdoba,AR
+394,billing,CABA,Salta,AR
