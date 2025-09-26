@@ -21,6 +21,7 @@ def build_fact_order_item() -> pd.DataFrame:
     dim_channel = extractor.load_csv(WAREHOUSE_PATH, "dim_channel")
     dim_campaign = extractor.load_csv(WAREHOUSE_PATH, "dim_campaign")
     dim_customer = extractor.load_csv(WAREHOUSE_PATH, "dim_customer")
+    dim_time = extractor.load_csv(WAREHOUSE_PATH, "dim_time")
 
     fact_table_raw = (
         order_items_clean
@@ -35,7 +36,8 @@ def build_fact_order_item() -> pd.DataFrame:
         .merge(dim_channel[["channel_id","channel_key"]], on = "channel_id", how = "left")
         .merge(dim_campaign[["campaign_id","campaign_key"]], on = "campaign_id", how = "left")
         .merge(dim_customer[["customer_id","customer_key"]], on = "customer_id", how = "left")
-        .drop(columns=["order_id","address_id","product_id","channel_id","campaign_id","customer_id"])          
+        .merge(dim_time[["datetime_id","time_key"]], on = "datetime_id", how = "left")
+        .drop(columns=["order_id","address_id","product_id","channel_id","campaign_id","customer_id","datetime_id"])          
     )
     
     fact_table["order_key"] = range(1, len(fact_table) + 1)
@@ -48,11 +50,11 @@ def build_fact_order_item() -> pd.DataFrame:
             "channel_key",
             "campaign_key",
             "customer_key",
+            "time_key",
             "line_number",
             "quantity",
             "discount_amount",
             "tax_amount",
-            "order_date"
         ]]
     )
 

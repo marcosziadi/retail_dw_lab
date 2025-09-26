@@ -14,3 +14,4 @@ from .build_dimension_channel import build_dim_channel
 from .build_dimension_campaign import build_dim_campaign
 from .build_dimension_customer import build_dim_customer
 from .build_dimension_location import build_dim_location
+from .build_dimension_time import build_dim_time

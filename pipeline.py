@@ -19,6 +19,8 @@ from etl.transform import build_dim_campaign
 from etl.transform import build_dim_customer
 from etl.transform import build_dim_location
 from etl.transform import build_fact_order_item
+from etl.transform import build_dim_time
+
 
 from etl.load import CSVLoader
 from utils.config_loader import load_config # SE PODRIA ELIMINAR
@@ -38,7 +40,7 @@ def run_etl_pipeline():
     print("="*50)
 
     try:
-        # STAGING
+        # TRANSFORM
         print("\nSTAGING: Cleaning and preparing tables...")  
         clean_products()
         clean_categories()
@@ -50,13 +52,13 @@ def run_etl_pipeline():
         clean_order_marketing()
         clean_order_items()
         
-        # TRANSFORM
         print("\nTRANSFORMATION:\nCreating dimensions...")
         build_dim_product()
         build_dim_channel()
         build_dim_campaign()
         build_dim_customer()
         build_dim_location()
+        build_dim_time()
 
         print("\nCreating fact table...")
         build_fact_order_item()
