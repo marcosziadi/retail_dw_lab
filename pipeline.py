@@ -9,6 +9,9 @@ from etl.transform import clean_channels
 from etl.transform import clean_campaigns
 from etl.transform import clean_customers
 from etl.transform import clean_customer_addresses
+from etl.transform import clean_categories
+from etl.transform import clean_orders
+from etl.transform import clean_order_marketing
 
 from etl.transform import build_dim_product
 from etl.transform import build_dim_channel
@@ -37,18 +40,24 @@ def run_etl_pipeline():
         # STAGING
         print("\nSTAGING: Cleaning and preparing tables...")  
         clean_products()
+        clean_categories()
         clean_channels()
         clean_campaigns()
         clean_customers()
         clean_customer_addresses()
+        clean_orders()
+        clean_order_marketing()
         
         # TRANSFORM
-        print("\nTRANSFORMATION: Creating dimensions...")
+        print("\nTRANSFORMATION:\nCreating dimensions...")
         build_dim_product()
         build_dim_channel()
         build_dim_campaign()
         build_dim_customer()
         build_dim_location()
+
+        print("\nCreating fact table...")
+        # build_fact_item_sell()
 
         # LOAD
         print("\nLOAD: Saving dimensions...")

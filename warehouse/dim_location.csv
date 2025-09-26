@@ -1,4 +1,4 @@
-city,province,country_code,city_id
+city,province,country_code,location_key
 Mendoza,Santa Fe,AR,1
 Salta,Neuquén,AR,2
 Comodoro Rivadavia,Mendoza,AR,3

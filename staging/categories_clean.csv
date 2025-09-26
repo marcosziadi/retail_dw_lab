@@ -1,0 +1,13 @@
+category_id,category,parent_category_name
+1,Ropa,
+2,Calzado,
+3,Accesorios,
+4,Electrónica,
+5,Camperas,Ropa
+6,Remeras,Ropa
+7,Pantalones,Ropa
+8,Zapatillas,Calzado
+9,Botas,Calzado
+10,Mochilas,Accesorios
+11,Gorras,Accesorios
+12,Wearables,Electrónica

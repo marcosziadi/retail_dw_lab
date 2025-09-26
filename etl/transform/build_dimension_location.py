@@ -16,7 +16,7 @@ def build_dim_location() -> pd.DataFrame:
     shipping_addresses = customer_addresses_clean[only_shipping]
     
     unique_cities = shipping_addresses[["city", "province", "country_code"]].drop_duplicates()
-    unique_cities["city_id"] = range(1, len(unique_cities) + 1)
+    unique_cities["location_key"] = range(1, len(unique_cities) + 1)
 
     dim_location = unique_cities.copy()
 
@@ -25,7 +25,7 @@ def build_dim_location() -> pd.DataFrame:
 
     address_city_mapping = (
         shipping_addresses.merge(unique_cities, on = ["city", "province", "country_code"], how = "left")
-                        .drop(columns = ["city","province","country_code", "address_type"])
+                          .drop(columns = ["city","province","country_code", "address_type"])
         )
     
     address_city_mapping.to_csv("staging/mapping/address_city_mapping.csv")

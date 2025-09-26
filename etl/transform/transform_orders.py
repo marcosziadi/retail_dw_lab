@@ -3,36 +3,29 @@ from pathlib import Path
 
 from etl.extract import CSVExtractor
 
+RAW_PATH = Path("raw")
 
-def clean_orders(orders: pd.DataFrame, order_marketing: pd.DataFrame, campaigns: pd.DataFrame) -> pd.DataFrame:
+def clean_orders() -> pd.DataFrame:
     """
     DESCRIPTION
     """
-    
-    order_marketing_campaign = order_marketing[~ order_marketing["campaign_id"].isnull()]
 
-    order_marketing_campaign_mapping = order_marketing_campaign[["order_id","campaign_id"]]
-
-    orders_paid = orders[orders["order_status"].isin(["paid","shipped","delivered"])]
+    extractor = CSVExtractor()
+    orders = extractor.load_csv(RAW_PATH, "orders")
     
-    important_cols = [
+    important_columns = [
         'order_id',
         'customer_id',
+        'shipping_address_id',
         'channel_id',
-        'location_id',
-        'order_date',
         'order_status',
-        'currency',
-        'shipping_amount',
-        'order_subtotal',
-        'order_discount',
-        'order_tax',
-        'order_total'
+        'order_date'
     ]
+    orders_trimmed = orders[important_columns]
 
-    orders_paid = orders_paid[important_cols].copy()
+    paid_orders = orders_trimmed["order_status"].isin(["paid","shipped","delivered"])
+    orders_clean = orders_trimmed[paid_orders]
 
-    orders_paid.to_csv("staging/orders_clean.csv", index=False)
+
+    orders_clean.to_csv("staging/orders_clean.csv", index=False)
     print("orders_clean.csv created!")
-
-    order_marketing_campaign_mapping.to_csv("staging/mappings/order_marketing_campaign_mapping.csv")
