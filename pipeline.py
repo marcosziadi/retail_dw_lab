@@ -48,9 +48,12 @@ def run_etl_pipeline():
         for table in clean_tables:
             loader.save_dataframe(STAGING_PATH, clean_tables[table], f"clean_{table}.csv")    
         
-        print("- " * 25 + "\n")
+        for table in list(clean_tables.keys()):
+            print(f"\tCreated & Saved: clean_{table}")
+        num_tables = len(clean_tables)
+        print(f"Creation and saving completed: {num_tables} tables were saved.\n")
 
-        print("- " * 25 + "\nTRANSFORMATION\n--> Creating dimensions...\n" + "- " * 25)
+        print("TRANSFORMATION")
 
         dim_tables = {
             "product": tr.build_dim_product(clean_tables["products"], clean_tables["categories"]),
@@ -62,7 +65,7 @@ def run_etl_pipeline():
 
         dim_location, address_mapping = tr.build_dim_location(clean_tables["customer_addresses"])
         dim_tables["location"] = dim_location
-
+        # AGREGAR IMPRIMIR CREATED AND SAVED DIMENSION Y LUEGO FACT_TABLE
         mappings = {
             "address_city_mapping": address_mapping
         }
