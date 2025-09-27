@@ -1,24 +1,17 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-
-def build_dim_product() -> pd.DataFrame:
+def build_dim_product(clean_products: pd.DataFrame, clean_categories: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
 
-    extractor = CSVExtractor()
-    products_clean = extractor.load_csv(STAGING_PATH, "products_clean")
-    categories_clean = extractor.load_csv(STAGING_PATH, "categories_clean")
-    
     dim_product = (
-        products_clean.merge(categories_clean, on = "category_id", how = "left")
-                      .drop(columns = ["category_id"])
+        clean_products
+        .merge(clean_categories, on="category_id", how="left")
+        .drop(columns=["category_id"])
     )
     
-    dim_product["product_key"] = range(1, len(products_clean) + 1)
+    dim_product["product_key"] = range(1, len(clean_products) + 1)
 
     dim_product = (
         dim_product[[
@@ -34,8 +27,8 @@ def build_dim_product() -> pd.DataFrame:
             "created_at",
             "category",
             "parent_category_name"
-        ]].copy()
+        ]]
+        .copy()
     )
 
-    dim_product.to_csv("warehouse/dim_product.csv", index=False)
-    print("dim_product.csv created!")
+    return dim_product

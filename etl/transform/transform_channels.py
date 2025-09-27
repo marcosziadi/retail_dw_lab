@@ -1,19 +1,10 @@
 import pandas as pd
-from pathlib import Path
 
-from etl.extract import CSVExtractor
-
-RAW_PATH = Path("raw")
-
-def clean_channels() -> pd.DataFrame:
+def clean_channels(channels: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
 
-    extractor = CSVExtractor()
-    channels = extractor.load_csv(RAW_PATH, "channels")
-
     channels_clean = channels.copy()
 
-    channels_clean.to_csv("staging/channels_clean.csv", index=False)
-    print("channels_clean.csv created!")
+    return channels_clean

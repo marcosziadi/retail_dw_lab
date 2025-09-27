@@ -1,21 +1,14 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-
-def build_dim_customer() -> pd.DataFrame:
+def build_dim_customer(clean_customers: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor()
-    customer_clean = extractor.load_csv(STAGING_PATH, "customers_clean")
-    
-    customer_clean["customer_key"] = range(1, len(customer_clean) + 1)
+ 
+    clean_customers["customer_key"] = range(1, len(clean_customers) + 1)
 
     dim_customer = (
-        customer_clean[[
+        clean_customers[[
             "customer_key",
             "customer_id",
             "first_name",
@@ -26,8 +19,8 @@ def build_dim_customer() -> pd.DataFrame:
             "birth_date",
             "created_at",
             "marketing_opt_in"
-        ]].copy()
+        ]]
+        .copy()
     )
 
-    dim_customer.to_csv("warehouse/dim_customer.csv", index=False)
-    print("dim_customer.csv created!")
+    return dim_customer

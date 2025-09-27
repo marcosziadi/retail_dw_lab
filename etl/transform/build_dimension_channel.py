@@ -1,27 +1,20 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-
-def build_dim_channel() -> pd.DataFrame:
+def build_dim_channel(clean_channels: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor()
-    channel_clean = extractor.load_csv(STAGING_PATH, "channels_clean")
     
-    channel_clean["channel_key"] = range(1, len(channel_clean) + 1)
+    clean_channels["channel_key"] = range(1, len(clean_channels) + 1)
 
     dim_channel = (
-        channel_clean[[
+        clean_channels[[
             "channel_key",
             "channel_id",
             "channel_name",
             "description"
-        ]].copy()
+        ]]
+        .copy()
     )
 
-    dim_channel.to_csv("warehouse/dim_channel.csv", index=False)
-    print("dim_channel.csv created!")
+    return clean_channels

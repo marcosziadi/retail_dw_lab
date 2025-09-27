@@ -1,20 +1,12 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-
-def build_dim_time() -> pd.DataFrame:
+def build_dim_time(clean_orders: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor()
-    orders = extractor.load_csv(STAGING_PATH, "orders_clean")
-        
-    start_date = orders["order_date"].min()
-    end_date = orders["order_date"].max()
-    date_range = pd.date_range(start = start_date, end = end_date, freq="min")
+    start_date = clean_orders["order_date"].min()
+    end_date = clean_orders["order_date"].max()
+    date_range = pd.date_range(start=start_date, end=end_date, freq="min")
 
     dim_time = pd.DataFrame({
         "time_key": range(1, len(date_range) + 1),
@@ -32,5 +24,4 @@ def build_dim_time() -> pd.DataFrame:
         "is_weekend": date_range.dayofweek >= 5
     })
     
-    dim_time.to_csv("warehouse/dim_time.csv", index=False)
-    print("dim_time.csv created!")
+    return dim_time

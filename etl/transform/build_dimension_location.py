@@ -1,21 +1,24 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-
-def build_dim_location() -> pd.DataFrame:
+def build_dim_location(clean_customer_addresses: pd.DataFrame) -> pd.DataFrame:
     """
     DESCRIPTION
     """
-
-    extractor = CSVExtractor()
-    customer_addresses_clean = extractor.load_csv(STAGING_PATH, "customer_addresses_clean")
+   
+    only_shipping = (
+        clean_customer_addresses["address_type"]
+        .isin(["shipping"])
+    )
+    shipping_addresses = clean_customer_addresses[only_shipping]
     
-    only_shipping = customer_addresses_clean["address_type"] == "shipping"
-    shipping_addresses = customer_addresses_clean[only_shipping]
-    
-    unique_cities = shipping_addresses[["city", "province", "country_code"]].drop_duplicates()
+    unique_cities = (
+        shipping_addresses[[
+            "city",
+            "province",
+            "country_code"
+            ]]
+        .drop_duplicates()
+    )
     unique_cities["location_key"] = range(1, len(unique_cities) + 1)
 
     dim_location = (
@@ -24,16 +27,14 @@ def build_dim_location() -> pd.DataFrame:
             "city",
             "province",
             "country_code"
-        ]].copy()
+        ]]
+        .copy()
     )
 
-    dim_location.to_csv("warehouse/dim_location.csv", index=False)
-    print("dim_location.csv created!")
-
     address_city_mapping = (
-        shipping_addresses.merge(unique_cities, on = ["city", "province", "country_code"], how = "left")
-                          .drop(columns = ["city","province","country_code", "address_type"])
+        shipping_addresses
+        .merge(unique_cities, on=["city", "province", "country_code"], how="left")
+        .drop(columns=["city", "province", "country_code", "address_type"])
         )
     
-    address_city_mapping.to_csv("staging/address_city_mapping.csv", index=False)
-    print("address_city_mapping.csv created!")
+    return dim_location, address_city_mapping

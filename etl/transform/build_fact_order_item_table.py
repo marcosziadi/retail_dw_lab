@@ -1,32 +1,24 @@
 import pandas as pd
-from pathlib import Path
-from etl.extract import CSVExtractor
 
-STAGING_PATH = Path("staging")
-WAREHOUSE_PATH = Path("warehouse")
-
-def build_fact_order_item() -> pd.DataFrame:
+def build_fact_order_item(
+        clean_orders: pd.DataFrame,
+        clean_order_marketing: pd.DataFrame,
+        clean_order_items: pd.DataFrame,
+        dim_product: pd.DataFrame,
+        dim_channel: pd.DataFrame,
+        dim_campaign: pd.DataFrame,
+        dim_customer: pd.DataFrame,
+        dim_time: pd.DataFrame,
+        address_city_mapping: pd.DataFrame,
+    ) -> pd.DataFrame:
     """
     DESCRIPTION
     """
 
-    extractor = CSVExtractor()
-    
-    orders_clean = extractor.load_csv(STAGING_PATH, "orders_clean")
-    order_marketing_clean = extractor.load_csv(STAGING_PATH, "order_marketing_clean")
-    order_items_clean = extractor.load_csv(STAGING_PATH, "order_items_clean")
-    address_city_mapping = extractor.load_csv(STAGING_PATH, "address_city_mapping")
-    
-    dim_product = extractor.load_csv(WAREHOUSE_PATH, "dim_product")
-    dim_channel = extractor.load_csv(WAREHOUSE_PATH, "dim_channel")
-    dim_campaign = extractor.load_csv(WAREHOUSE_PATH, "dim_campaign")
-    dim_customer = extractor.load_csv(WAREHOUSE_PATH, "dim_customer")
-    dim_time = extractor.load_csv(WAREHOUSE_PATH, "dim_time")
-
     fact_table_raw = (
-        order_items_clean
-        .merge(orders_clean, on="order_id", how="inner")
-        .merge(order_marketing_clean, on="order_id", how="inner")
+        clean_order_items
+        .merge(clean_orders, on="order_id", how="inner")
+        .merge(clean_order_marketing, on="order_id", how="inner")
     )
 
     fact_table = (
@@ -56,7 +48,7 @@ def build_fact_order_item() -> pd.DataFrame:
             "discount_amount",
             "tax_amount",
         ]]
+        .copy()
     )
 
-    fact_table.to_csv("warehouse/fact_order_item.csv", index=False)
-    print("fact_order_item.csv created!")
+    return fact_table
