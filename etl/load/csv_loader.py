@@ -1,21 +1,20 @@
-import os
+from pathlib import Path
+import pandas as pd
 
 class CSVLoader:
-    def __init__(self, output_path):
-        self.output_path = output_path
-        os.makedirs(output_path, exist_ok = True)
+    def __init__(self):
+        pass
 
-    def save_dataframe(self, df, filename):
+    def save_dataframe(self, output_path: Path, df: pd.DataFrame, filename: str):
         """
         Saves a dataframe as a csv file
         """
-
-        file_path = os.path.join(self.output_path, filename)
+        file_path = output_path / filename
 
         try:
+            output_path.mkdir(parents=True, exist_ok=True)
             df.to_csv(file_path, index = False)
-            print(f"{filename} was saved in {self.output_path}")
             return True
         except Exception as e:
-            print(f"Error saving {filename}: {str(e)}")
-            return False
+            raise IOError(f"Error saving file '{filename}' in {file_path}. Details: {str(e)}")
+            return False # Quitar returns de funciones, que la validacion de los resultados se hagan en pipeline

@@ -17,17 +17,21 @@ def run_etl_pipeline():
 
     try:
         extract = CSVExtractor()
-        staging_loader = CSVLoader(STAGING_PATH)
+        loader = CSVLoader()
         
         # ===== EXTRACT =====
-        print("- " * 25 + "\nEXTRACTING: Extracting data...\n" + "- " * 25)
+        print("EXTRACTING DATA")
         
         raw_data = extract.read_all_csv_files(RAW_PATH)
-
-        print("- " * 25 + "\n")
+        
+        for table in list(raw_data.keys()):
+            print(f"\tRead: {table}")
+        num_tables = len(raw_data)
+        print(f"Extraction completed: {num_tables} tables were read.\n")
+        
 
         # ===== TRANSFORM =====
-        print("- " * 25 + "\nSTAGING: Cleaning and preparing tables...\n" + "- " * 25)  
+        print("STAGING")  
 
         clean_tables = {
             "products": tr.clean_products(raw_data["products"]),
@@ -42,30 +46,27 @@ def run_etl_pipeline():
         }
 
         for table in clean_tables:
-            staging_loader.save_dataframe(clean_tables[table], f"clean_{table}.csv")    
+            loader.save_dataframe(STAGING_PATH, clean_tables[table], f"clean_{table}.csv")    
         
         print("- " * 25 + "\n")
 
         print("- " * 25 + "\nTRANSFORMATION\n--> Creating dimensions...\n" + "- " * 25)
-        
-        staging_data = extract.read_all_csv_files(STAGING_PATH)
 
         dim_tables = {
-            "product": tr.build_dim_product(staging_data["clean_products"], staging_data["clean_categories"]),
-            "channel": tr.build_dim_channel(staging_data["clean_channels"]),
-            "campaign": tr.build_dim_campaign(staging_data["clean_campaigns"]),
-            "customer": tr.build_dim_customer(staging_data["clean_customers"]),
-            "location": tr.build_dim_location(staging_data["clean_customer_addresses"]),
-            "time": tr.build_dim_time(staging_data["clean_orders"])
+            "product": tr.build_dim_product(clean_tables["products"], clean_tables["categories"]),
+            "channel": tr.build_dim_channel(clean_tables["channels"]),
+            "campaign": tr.build_dim_campaign(clean_tables["campaigns"]),
+            "customer": tr.build_dim_customer(clean_tables["customers"]),
+            "time": tr.build_dim_time(clean_tables["orders"])
         }
 
-        dim_location, address_mapping = tr.build_dim_location(staging_data["clean_customer_addresses"])
+        dim_location, address_mapping = tr.build_dim_location(clean_tables["customer_addresses"])
         dim_tables["location"] = dim_location
 
         mappings = {
             "address_city_mapping": address_mapping
         }
-        staging_loader.save_dataframe(mappings["address_city_mapping"], "address_city_mapping.csv") 
+        loader.save_dataframe(STAGING_PATH, mappings["address_city_mapping"], "address_city_mapping.csv") 
 
         print("- " * 25 + "\n")
 
@@ -88,13 +89,10 @@ def run_etl_pipeline():
         # ===== LOAD =====
         print("- " * 25 + "\nLOAD: Saving dimensions...\n" + "- " * 25)
 
-        warehouse_loader = CSVLoader(WAREHOUSE_PATH)
-
         save_status = []
         for table_name, table in dim_tables.items():
-            save_status.append(warehouse_loader.save_dataframe(table, f"dim_{table_name}.csv"))
-
-        save_status.append(warehouse_loader.save_dataframe(fact_order_items, "fact_order_items.csv"))
+            save_status.append(loader.save_dataframe(WAREHOUSE_PATH, table, f"dim_{table_name}.csv"))
+        save_status.append(loader.save_dataframe(WAREHOUSE_PATH, fact_order_items, "fact_order_items.csv"))
         
         print("- " * 25 + "\n")
 
