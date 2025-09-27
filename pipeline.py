@@ -19,7 +19,6 @@ def run_etl_pipeline():
         extract = CSVExtractor()
         staging_loader = CSVLoader(STAGING_PATH)
         
-
         # ===== EXTRACT =====
         print("- " * 25 + "\nEXTRACTING: Extracting data...\n" + "- " * 25)
         
@@ -70,7 +69,7 @@ def run_etl_pipeline():
 
         print("- " * 25 + "\n")
 
-        print("- " * 25 + "\nTRANSFORMATION\n--> Creating fact table..." + "- " * 25)
+        print("- " * 25 + "\nTRANSFORMATION\n--> Creating fact table...\n" + "- " * 25)
 
         fact_order_items = (
             tr.build_fact_order_item(
@@ -86,15 +85,10 @@ def run_etl_pipeline():
             )
         )
 
-        print("\n" + "- " * 25)
-
         # ===== LOAD =====
         print("- " * 25 + "\nLOAD: Saving dimensions...\n" + "- " * 25)
 
         warehouse_loader = CSVLoader(WAREHOUSE_PATH)
-
-        for map_name, df in mappings.items():
-            warehouse_loader.save_dataframe(df, f"{map_name}.csv")
 
         save_status = []
         for table_name, table in dim_tables.items():
